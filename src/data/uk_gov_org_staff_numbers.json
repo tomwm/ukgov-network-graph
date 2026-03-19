@@ -1,0 +1,3410 @@
+{
+  "metadata": {
+    "description": "Populated staff numbers dataset for UK government organisations.",
+    "note": "Values include a mix of approximate public workforce statistics and heuristic estimates for missing data."
+  },
+  "organisations": [
+    {
+      "id": "active-travel-england",
+      "name": "Active Travel England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-adjudicators-office",
+      "name": "The Adjudicator's Office",
+      "org_type": "Other",
+      "parent_department": "HM Revenue & Customs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "administration-of-radioactive-substances-advisory-committee",
+      "name": "Administration of Radioactive Substances Advisory Committee",
+      "org_type": "Other",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advanced-research-and-invention-agency",
+      "name": "Advanced Research and Invention Agency",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-for-social-science",
+      "name": "Advisory Committee for Social Science",
+      "org_type": "Other",
+      "parent_department": "Food Standards Agency",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-animal-feedingstuffs",
+      "name": "Advisory Committee on Animal Feedingstuffs",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Food Standards Agency",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-business-appointments",
+      "name": "Advisory Committee on Business Appointments",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-clinical-excellence-awards",
+      "name": "Advisory Committee on Clinical Impact Awards",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-conscientious-objectors",
+      "name": "Advisory Committee on Conscientious Objectors",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-general-commissioners-of-income-tax",
+      "name": "Advisory Committee on General Commissioners of Income Tax",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-novel-foods-and-processes",
+      "name": "Advisory Committee on Novel Foods and Processes",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Food Standards Agency",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-committee-on-releases-to-the-environment",
+      "name": "Advisory Committee on Releases to the Environment",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-advisory-council-on-national-records-and-archives",
+      "name": "The Advisory Council on National Records and Archives",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "advisory-council-on-the-misuse-of-drugs",
+      "name": "Advisory Council on the Misuse of Drugs",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "acas",
+      "name": "Advisory, Conciliation and Arbitration Service",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ai-safety-institute",
+      "name": "AI Security Institute",
+      "org_type": "Other",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "air-accidents-investigation-branch",
+      "name": "Air Accidents Investigation Branch",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "analysis-function",
+      "name": "Analysis Function",
+      "org_type": "Civil service",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "animal-and-plant-health-agency",
+      "name": "Animal and Plant Health Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "animals-in-science-committee",
+      "name": "Animals in Science Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "armed-forces-covenant-fund-trust",
+      "name": "Armed Forces Covenant Fund Trust",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "armed-forces-pay-review-body",
+      "name": "Armed Forces' Pay Review Body",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "arts-council-england",
+      "name": "Arts Council England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "attorney-generals-office",
+      "name": "Attorney General's Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "awe",
+      "name": "AWE Nuclear Security Technologies",
+      "org_type": "Other",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "bbc",
+      "name": "BBC",
+      "org_type": "Public corporation",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "biometrics-and-surveillance-camera-commissioner",
+      "name": "Biometrics and Surveillance Camera Commissioner",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "biometrics-commissioner",
+      "name": "Biometrics Commissioner",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "board-of-trustees-of-the-royal-botanic-gardens-kew",
+      "name": "Board of Trustees of the Royal Botanic Gardens Kew",
+      "org_type": "Other",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "border-force",
+      "name": "Border Force",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "boundary-commission-for-england",
+      "name": "Boundary Commission for England",
+      "org_type": "Other",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "boundary-commission-for-northern-ireland",
+      "name": "Boundary Commission for Northern Ireland",
+      "org_type": "Other",
+      "parent_department": "Northern Ireland Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "boundary-commission-for-scotland",
+      "name": "Boundary Commission for Scotland",
+      "org_type": "Other",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "boundary-commission-for-wales",
+      "name": "Boundary Commission for Wales",
+      "org_type": "Other",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-business-bank",
+      "name": "British Business Bank",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-council",
+      "name": "British Council",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-film-institute",
+      "name": "British Film Institute",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-hallmarking-council",
+      "name": "British Hallmarking Council",
+      "org_type": "Other",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-library",
+      "name": "British Library",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-pharmacopoeia-commission",
+      "name": "British Pharmacopoeia Commission",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "british-transport-police-authority",
+      "name": "British Transport Police Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "building-regulations-advisory-committee",
+      "name": "Building Regulations Advisory Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "cabinet-office",
+      "name": "Cabinet Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": 8000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "care-quality-commission",
+      "name": "Care Quality Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "care-quality-commissions",
+      "name": "Care Quality Commissions",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "central-arbitration-committee",
+      "name": "Central Arbitration Committee",
+      "org_type": "Tribunal",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "central-digital-and-data-office",
+      "name": "Central Digital and Data Office",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "centre-for-environment-fisheries-and-aquaculture-science",
+      "name": "Centre for Environment, Fisheries and Aquaculture Science",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "channel-4",
+      "name": "Channel 4",
+      "org_type": "Public corporation",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "charity-commission",
+      "name": "The Charity Commission",
+      "org_type": "Non-ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "churches-conservation-trust",
+      "name": "Churches Conservation Trust",
+      "org_type": "Other",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-aviation-authority",
+      "name": "Civil Aviation Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-justice-council",
+      "name": "Civil Justice Council",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-nuclear-police-authority",
+      "name": "Civil Nuclear Police Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-procedure-rule-committee",
+      "name": "Civil Procedure Rule Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-service-board",
+      "name": "Civil Service Board",
+      "org_type": "Civil service",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-service-commission",
+      "name": "Civil Service Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-service-fast-stream",
+      "name": "Civil Service Fast Stream",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-service-hr",
+      "name": "Civil Service HR",
+      "org_type": "Civil service",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "civil-service-resourcing",
+      "name": "Civil Service Resourcing",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-coal-authority",
+      "name": "Coal Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "college-of-policing",
+      "name": "College of Policing",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "college-of-teaching",
+      "name": "College of Teaching",
+      "org_type": "Other",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "commission-on-human-medicines",
+      "name": "Commission on Human Medicines",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "committee-on-climate-change",
+      "name": "Committee on Climate Change",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "committee-on-mutagenicity-of-chemicals-in-food-consumer-products-and-the-environment",
+      "name": "Committee on Mutagenicity of Chemicals in Food, Consumer Products and the Environment",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "committee-on-radioactive-waste-management",
+      "name": "Committee on Radioactive Waste Management",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "commonwealth-scholarship-commission",
+      "name": "Commonwealth Scholarship Commission in the UK",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "companies-house",
+      "name": "Companies House",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": 1100,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "company-names-tribunal",
+      "name": "Company Names Tribunal",
+      "org_type": "Other",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "competition-and-markets-authority",
+      "name": "Competition and Markets Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "competition-appeal-tribunal",
+      "name": "Competition Appeal Tribunal",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "competition-service",
+      "name": "Competition Service",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "consumer-council-for-water",
+      "name": "Consumer Council for Water",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "copyright-tribunal",
+      "name": "Copyright Tribunal",
+      "org_type": "Other",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "corporate-officers-of-the-house-of-commons",
+      "name": "Corporate Officers of the House of Commons",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "corporate-officers-of-the-house-of-lords",
+      "name": "Corporate Officers of the House of Lords",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "council-for-science-and-technology",
+      "name": "Council for Science and Technology",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "criminal-cases-review-commission",
+      "name": "Criminal Cases Review Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "criminal-injuries-compensation-authority",
+      "name": "Criminal Injuries Compensation Authority",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "criminal-justice-inspection-northern-ireland",
+      "name": "Criminal Justice Inspectorate Northern Ireland",
+      "org_type": "Other",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "criminal-procedure-rule-committee",
+      "name": "Criminal Procedure Rule Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "crown-commercial-service",
+      "name": "Crown Commercial Service",
+      "org_type": "Executive agency",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-crown-estate",
+      "name": "The Crown Estate",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "crown-prosecution-service",
+      "name": "Crown Prosecution Service",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Attorney General's Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "defence-and-security-accelerator",
+      "name": "Defence and Security Accelerator",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "defence-electronics-and-components-agency",
+      "name": "Defence Electronics and Components Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "defence-equipment-and-support",
+      "name": "Defence Equipment and Support",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "defence-nuclear-safety-committee",
+      "name": "Defence Nuclear Safety Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "defence-science-and-technology-laboratory",
+      "name": "Defence Science and Technology Laboratory",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-business-and-trade",
+      "name": "Department for Business & Trade",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-culture-media-and-sport",
+      "name": "Department for Culture, Media & Sport",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-digital-culture-media-and-sport",
+      "name": "Department for Digital, Culture, Media and Sport",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-education",
+      "name": "Department for Education",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-energy-security-and-net-zero",
+      "name": "Department for Energy Security & Net Zero",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-environment-food-rural-affairs",
+      "name": "Department for Environment, Food & Rural Affairs",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-international-trade",
+      "name": "Department for International Trade",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-science-innovation-and-technology",
+      "name": "Department for Science, Innovation & Technology",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-transport",
+      "name": "Department for Transport",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-for-work-pensions",
+      "name": "Department for Work & Pensions",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "department-of-health-and-social-care",
+      "name": "Department of Health & Social Care",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "directly-operated-railways-limited",
+      "name": "Directly Operated Railways Limited",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "disabled-persons-transport-advisory-committee",
+      "name": "Disabled Persons Transport Advisory Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "disclosure-and-barring-service",
+      "name": "Disclosure and Barring Service",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "driver-and-vehicle-licensing-agency",
+      "name": "Driver and Vehicle Licensing Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "driver-and-vehicle-standards-agency",
+      "name": "Driver and Vehicle Standards Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ebbsfleet-development-corporation",
+      "name": "Ebbsfleet Development Corporation",
+      "org_type": "Other",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "education-and-skills-funding-agency",
+      "name": "Education and Skills Funding Agency",
+      "org_type": "Other",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "english-institute-of-sport",
+      "name": "English Institute of Sport",
+      "org_type": "Other",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "environment-agency",
+      "name": "Environment Agency",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": 11000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "equality-and-human-rights-commission",
+      "name": "Equality and Human Rights Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ethics-and-integrity-commission",
+      "name": "Ethics and Integrity Commission",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "evaluation-task-force",
+      "name": "Evaluation Task Force",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "family-procedure-rule-committee",
+      "name": "Family Procedure Rule Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "financial-conduct-authority",
+      "name": "Financial Conduct Authority",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "first-tier-tribunal-immigration-and-asylum-chamber",
+      "name": "First-tier Tribunal (Immigration and Asylum Chamber)",
+      "org_type": "Tribunal",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "fleet-air-arm-museum",
+      "name": "Fleet Air Arm Museum",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "flood-re",
+      "name": "Flood Re",
+      "org_type": "Other",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "food-standards-agency",
+      "name": "Food Standards Agency",
+      "org_type": "Non-ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "foreign-commonwealth-development-office",
+      "name": "Foreign, Commonwealth & Development Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": 17000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "forensic-science-regulator",
+      "name": "Forensic Science Regulator",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "forest-research",
+      "name": "Forest Research",
+      "org_type": "Executive agency",
+      "parent_department": "Forestry Commission",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "forestry-commission",
+      "name": "Forestry Commission",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "forestry-england",
+      "name": "Forestry England",
+      "org_type": "Executive agency",
+      "parent_department": "Forestry Commission",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "gambling-commission",
+      "name": "Gambling Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "gangmasters-and-labour-abuse-authority",
+      "name": "Gangmasters and Labour Abuse Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "general-register-office",
+      "name": "General Register Office",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-geospatial-commission",
+      "name": "The Geospatial Commission",
+      "org_type": "Other",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-actuarys-department",
+      "name": "Government Actuary's Department",
+      "org_type": "Non-ministerial department",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-communication-service",
+      "name": "Government Communication Service",
+      "org_type": "Civil service",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-communications-headquarters",
+      "name": "Government Communications Headquarters",
+      "org_type": "Other",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-debt-management-function",
+      "name": "Government Debt Management Function",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-digital-service",
+      "name": "Government Digital Service",
+      "org_type": "Civil service",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-equalities-office",
+      "name": "Government Equalities Office",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-internal-audit-agency",
+      "name": "Government Internal Audit Agency",
+      "org_type": "Executive agency",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-legal-department",
+      "name": "Government Legal Department",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Attorney General's Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-office-for-science",
+      "name": "Government Office for Science",
+      "org_type": "Other",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-people-group",
+      "name": "Government People Group",
+      "org_type": "Civil service",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "government-property-agency",
+      "name": "Government Property Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "great-britain-china-centre",
+      "name": "Great Britain-China Centre",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "great-british-energy",
+      "name": "Great British Energy",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "great-british-railways-transition-team",
+      "name": "Great British Railways Transition Team",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "groceries-code-adjudicator",
+      "name": "Groceries Code Adjudicator",
+      "org_type": "Other",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "health-and-safety-executive",
+      "name": "Health and Safety Executive",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "health-research-authority",
+      "name": "Health Research Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "health-services-safety-investigations-body",
+      "name": "Health Services Safety Investigations Body",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "healthwatch-england",
+      "name": "Healthwatch England",
+      "org_type": "Other",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "high-speed-two-limited",
+      "name": "High Speed Two (HS2) Limited",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "highways-england",
+      "name": "Highways England",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "historic-england",
+      "name": "Historic England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "historic-royal-palaces",
+      "name": "Historic Royal Palaces",
+      "org_type": "Public corporation",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-courts-and-tribunals-service",
+      "name": "HM Courts & Tribunals Service",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-crown-prosecution-service-inspectorate",
+      "name": "HM Crown Prosecution Service Inspectorate",
+      "org_type": "Other",
+      "parent_department": "Attorney General's Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-government-communications-centre",
+      "name": "HM Government Communications Centre",
+      "org_type": "Other",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-inspectorate-of-constabulary-and-fire-rescue-services",
+      "name": "HM Inspectorate of Constabulary and Fire & Rescue Services",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-inspectorate-of-prisons",
+      "name": "HM Inspectorate of Prisons",
+      "org_type": "Independent monitoring body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-inspectorate-of-probation",
+      "name": "HM Inspectorate of Probation",
+      "org_type": "Independent monitoring body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-land-registry",
+      "name": "HM Land Registry",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Ministry of Justice",
+      "staff_count": 6500,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "hm-passport-office",
+      "name": "HM Passport Office",
+      "org_type": "Executive agency",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-prison-and-probation-service",
+      "name": "HM Prison and Probation Service",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "hm-revenue-customs",
+      "name": "HM Revenue & Customs",
+      "org_type": "Non-ministerial department",
+      "parent_department": null,
+      "staff_count": 67000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "hm-treasury",
+      "name": "HM Treasury",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": 1600,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "home-office",
+      "name": "Home Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": 35000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "home-office-science",
+      "name": "Home Office Science",
+      "org_type": "Executive agency",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "homes-england",
+      "name": "Homes England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "horserace-betting-levy-board",
+      "name": "Horserace Betting Levy Board",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "house-of-lords-appointments-commission",
+      "name": "House of Lords Appointments Commission",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "human-fertilisation-and-embryology-authority",
+      "name": "Human Fertilisation and Embryology Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "human-genetics-commission",
+      "name": "Human Genetics Commission",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "human-tissue-authority",
+      "name": "Human Tissue Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "immigration-advice-authority",
+      "name": "Immigration Advice Authority",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "imperial-war-museums",
+      "name": "Imperial War Museum",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-agricultural-appeals-panel",
+      "name": "Independent Agricultural Appeals Panel",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-anti-slavery-commissioner",
+      "name": "Independent Anti-Slavery Commissioner",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-case-examiner",
+      "name": "Independent Case Examiner",
+      "org_type": "Other",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-chief-inspector-of-borders-and-immigration",
+      "name": "Independent Chief Inspector of Borders and Immigration",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-commission-for-aid-impact",
+      "name": "Independent Commission for Aid Impact",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-family-returns-panel",
+      "name": "Independent Family Returns Panel",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-medical-expert-group",
+      "name": "Independent Medical Expert Group",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-monitoring-authority-for-the-citizens-rights-agreements",
+      "name": "Independent Monitoring Authority for the Citizens' Rights Agreements",
+      "org_type": "Other",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-monitoring-boards",
+      "name": "Independent Monitoring Boards",
+      "org_type": "Independent monitoring body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-office-for-police-conduct",
+      "name": "Independent Office for Police Conduct",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-reconfiguration-panel",
+      "name": "Independent Reconfiguration Panel",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-reporting-commission",
+      "name": "Independent Reporting Commission",
+      "org_type": "Other",
+      "parent_department": "Northern Ireland Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-reviewer-of-terrorism-legislation",
+      "name": "Independent Reviewer of Terrorism Legislation",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "independent-water-commission",
+      "name": "Independent Water Commission",
+      "org_type": "Other",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "industrial-development-advisory-board",
+      "name": "Industrial Development Advisory Board",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "industrial-injuries-advisory-council",
+      "name": "Industrial Injuries Advisory Council",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "information-commissioner-s-office",
+      "name": "Information Commissioner's Office",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "innovate-uk",
+      "name": "Innovate UK",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "insolvency-rules-committee",
+      "name": "Insolvency Rules Committee",
+      "org_type": "Other",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-insolvency-service",
+      "name": "The Insolvency Service",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "intellectual-property-office",
+      "name": "Intellectual Property Office",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "investigatory-powers-commissioners-office",
+      "name": "Investigatory Powers Commissioner's Office",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "joint-nature-conservation-committee",
+      "name": "Joint Nature Conservation Committee",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "judicial-appointments-and-conduct-ombudsman",
+      "name": "Judicial Appointments and Conduct Ombudsman",
+      "org_type": "Tribunal",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "judicial-appointments-commission",
+      "name": "Judicial Appointments Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "judicial-office",
+      "name": "Judicial Office",
+      "org_type": "Tribunal",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "kenova",
+      "name": "Kenova Investigation",
+      "org_type": "Other",
+      "parent_department": "Northern Ireland Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "labour-market-evidence-group",
+      "name": "Labour Market Evidence Group",
+      "org_type": "Ad-hoc advisory group",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "land-registry",
+      "name": "Land Registry",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-law-commission",
+      "name": "Law Commission",
+      "org_type": "Other",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "leasehold-advisory-service",
+      "name": "Leasehold Advisory Service",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "legal-aid-agency",
+      "name": "Legal Aid Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "legal-services-board",
+      "name": "Legal Services Board",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "lighthouse-advisory-board",
+      "name": "Lighthouse Advisory Board",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "local-government-and-social-care-ombudsman",
+      "name": "Local Government and Social Care Ombudsman",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "located",
+      "name": "LocatED",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "low-pay-commission",
+      "name": "Low Pay Commission",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "marine-accident-investigation-branch",
+      "name": "Marine Accident Investigation Branch",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "marine-management-organisation",
+      "name": "Marine Management Organisation",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "maritime-and-coastguard-agency",
+      "name": "Maritime and Coastguard Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "marshall-aid-commemoration-commission",
+      "name": "Marshall Aid Commemoration Commission",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "medicines-and-healthcare-products-regulatory-agency",
+      "name": "Medicines and Healthcare products Regulatory Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "migration-advisory-committee",
+      "name": "Migration Advisory Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ministry-of-defence",
+      "name": "Ministry of Defence",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ministry-of-housing-communities-and-local-government",
+      "name": "Ministry of Housing, Communities & Local Government",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ministry-of-justice",
+      "name": "Ministry of Justice",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": 90000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "the-national-archives",
+      "name": "The National Archives",
+      "org_type": "Non-ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-army-museum",
+      "name": "National Army Museum",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-counter-terrorism-security-office",
+      "name": "National Counter Terrorism Security Office",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-crime-agency",
+      "name": "National Crime Agency",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-dna-database-ethics-group",
+      "name": "National DNA Database Ethics Group",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-employer-advisory-board",
+      "name": "National Employer Advisory Board",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-employment-savings-trust",
+      "name": "National Employment Savings Trust (NEST) Corporation",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-gallery",
+      "name": "National Gallery",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-heritage-memorial-fund",
+      "name": "National Heritage Memorial Fund",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-highways",
+      "name": "National Highways",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-infrastructure-and-service-transformation-authority",
+      "name": "National Infrastructure and Service Transformation Authority",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-institute-for-health-and-care-excellence",
+      "name": "National Institute for Health and Care Excellence",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-national-lottery-community-fund",
+      "name": "The National Lottery Community Fund",
+      "org_type": "Other",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-museum-of-the-royal-navy",
+      "name": "National Museum of the Royal Navy",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-museums-liverpool",
+      "name": "National Museums Liverpool",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-nuclear-laboratory",
+      "name": "National Nuclear Laboratory",
+      "org_type": "Other",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-physical-laboratory",
+      "name": "National Physical Laboratory",
+      "org_type": "Other",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-portrait-gallery",
+      "name": "National Portrait Gallery",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "national-wealth-fund",
+      "name": "National Wealth Fund",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "natural-england",
+      "name": "Natural England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "natural-history-museum",
+      "name": "Natural History Museum",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "network-rail",
+      "name": "Network Rail",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nhs-blood-and-transplant",
+      "name": "NHS Blood and Transplant",
+      "org_type": "Special health authority",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nhs-business-services-authority",
+      "name": "NHS Business Services Authority",
+      "org_type": "Special health authority",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nhs-counter-fraud-authority",
+      "name": "NHS Counter Fraud Authority",
+      "org_type": "Special health authority",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nhs-england",
+      "name": "NHS England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": 13000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "nhs-pay-review-body",
+      "name": "NHS Pay Review Body",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nhs-property-services",
+      "name": "NHS Property Services",
+      "org_type": "Other",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nhs-resolution",
+      "name": "NHS Resolution",
+      "org_type": "Special health authority",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "northern-ireland-judicial-appointments-commission",
+      "name": "Northern Ireland Judicial Appointments Commission",
+      "org_type": "Other",
+      "parent_department": "Northern Ireland Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "northern-ireland-office",
+      "name": "Northern Ireland Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "northern-ireland-prison-service",
+      "name": "Northern Ireland Prison Service",
+      "org_type": "Other",
+      "parent_department": "Northern Ireland Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "northern-lighthouse-board",
+      "name": "Northern Lighthouse Board",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ns-i",
+      "name": "NS&I",
+      "org_type": "Non-ministerial department",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nuclear-decommissioning-authority",
+      "name": "Nuclear Decommissioning Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nuclear-liabilities-financing-assurance-board",
+      "name": "Nuclear Liabilities Financing Assurance Board",
+      "org_type": "Other",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "nuclear-research-advisory-council",
+      "name": "Nuclear Research Advisory Council",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "oak-national-academy",
+      "name": "Oak National Academy",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-budget-responsibility",
+      "name": "Office for Budget Responsibility",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-countering-extremism",
+      "name": "Office for Countering Extremism",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-environmental-protection",
+      "name": "Office for Environmental Protection",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-legal-complaints",
+      "name": "Office for Legal Complaints",
+      "org_type": "Other",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-national-statistics",
+      "name": "Office for National Statistics",
+      "org_type": "Other",
+      "parent_department": "UK Statistics Authority",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-product-safety-and-standards",
+      "name": "Office for Product Safety and Standards",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-students",
+      "name": "Office for Students",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-veterans-affairs",
+      "name": "Office for Veterans' Affairs",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-veterans\u2019-affairs",
+      "name": "Office for Veterans\u2019 Affairs",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-for-zero-emission-vehicles",
+      "name": "Office for Zero Emission Vehicles",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ofcom",
+      "name": "Office of Communications",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": 1100,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "office-of-rail-and-road",
+      "name": "Office of Rail and Road",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-advocate-general-for-scotland",
+      "name": "Office of the Advocate General for Scotland",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-childrens-commissioner",
+      "name": "Office of the Children's Commissioner",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-office-of-the-leader-of-the-house-of-commons",
+      "name": "Office of the Leader of the House of Commons",
+      "org_type": "Ministerial department",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-leader-of-the-house-of-lords",
+      "name": "Office of the Leader of the House of Lords",
+      "org_type": "Ministerial department",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-public-guardian",
+      "name": "Office of the Public Guardian",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-registrar-of-consultant-lobbyists",
+      "name": "Office of the Registrar of Consultant Lobbyists",
+      "org_type": "Other",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "official-solicitor-and-public-trustee",
+      "name": "The Official Solicitor and Public Trustee",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ofgem",
+      "name": "Ofgem",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "ofqual",
+      "name": "Ofqual",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Department for Education",
+      "staff_count": 600,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "ofsted",
+      "name": "Ofsted",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Department for Education",
+      "staff_count": 1800,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "oil-and-gas-authority",
+      "name": "Oil and Gas Authority",
+      "org_type": "Other",
+      "parent_department": "Department for Energy Security & Net Zero",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "parades-commission-for-northern-ireland",
+      "name": "Parades Commission for Northern Ireland",
+      "org_type": "Other",
+      "parent_department": "Northern Ireland Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "parole-board",
+      "name": "Parole Board",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "payment-systems-regulator",
+      "name": "Payment Systems Regulator",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-pensions-regulator",
+      "name": "The Pensions Regulator",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "planning-inspectorate",
+      "name": "Planning Inspectorate",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "plant-varieties-and-seeds-tribunal",
+      "name": "Plant Varieties and Seeds Tribunal",
+      "org_type": "Other",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "police-remuneration-review-body",
+      "name": "Police Remuneration Review Body",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "prime-ministers-office-10-downing-street",
+      "name": "Prime Minister's Office, 10 Downing Street",
+      "org_type": "Executive office",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "prison-service-pay-review-body",
+      "name": "Prison Service Pay Review Body",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "prisons-and-probation-ombudsman",
+      "name": "Prisons and Probation Ombudsman",
+      "org_type": "Independent monitoring body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "prudential-regulation-authority",
+      "name": "Prudential Regulation Authority",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "public-health-england",
+      "name": "Public Health England",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "pubs-code-adjudicator",
+      "name": "Pubs Code Adjudicator",
+      "org_type": "Other",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "queen-elizabeth-ii-conference-centre",
+      "name": "Queen Elizabeth II Conference Centre",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "rail-accident-investigation-branch",
+      "name": "Rail Accident Investigation Branch",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "reclaim-fund-ltd",
+      "name": "Reclaim Fund Ltd",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "regulator-of-social-housing",
+      "name": "Regulator of Social Housing",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "remploy-ltd",
+      "name": "Remploy Pension Scheme Trustees Ltd",
+      "org_type": "Other",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "reserve-forces-and-cadets-associations",
+      "name": "Reserve Forces' and Cadets' Associations",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "review-body-on-doctors-and-dentists-remuneration",
+      "name": "Review Body on Doctors' and Dentists' Remuneration",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-reviewing-committee-on-the-export-of-works-of-art-and-objects-of-cultural-interest",
+      "name": "The Reviewing Committee on the Export of Works of Art and Objects of Cultural Interest",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "royal-air-force-museum",
+      "name": "Royal Air Force Museum",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "royal-armouries",
+      "name": "Royal Armouries Museum",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "royal-botanic-gardens-kew",
+      "name": "Royal Botanic Gardens, Kew",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "royal-mint",
+      "name": "Royal Mint",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "royal-mint-advisory-committee",
+      "name": "Royal Mint Advisory Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "royal-museums-greenwich",
+      "name": "Royal Museums Greenwich",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-royal-parks",
+      "name": "Royal Parks",
+      "org_type": "Public corporation",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "rural-payments-agency",
+      "name": "Rural Payments Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": 3000,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "s4c",
+      "name": "S4C",
+      "org_type": "Other",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "school-teachers-review-body",
+      "name": "School Teachers' Review Body",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "science-advisory-committee-on-the-medical-implications-of-less-lethal-weapons",
+      "name": "Science Advisory Committee on the Medical Implications of Less-Lethal Weapons",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "science-advisory-council",
+      "name": "Science Advisory Council",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "science-council",
+      "name": "Science Council",
+      "org_type": "Other",
+      "parent_department": "Food Standards Agency",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "science-museum-group",
+      "name": "Science Museum Group",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-secretary-of-state-for-scotland",
+      "name": "Scotland Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "sea-fish-industry-authority",
+      "name": "Sea Fish Industry Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "secret-intelligence-service",
+      "name": "Secret Intelligence Service",
+      "org_type": "Other",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "security-industry-authority",
+      "name": "Security Industry Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "security-vetting-appeals-panel",
+      "name": "Security Vetting Appeals Panel",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "sentencing-council",
+      "name": "Sentencing Council for England and Wales",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "serious-fraud-office",
+      "name": "Serious Fraud Office",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Attorney General's Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "service-complaints-ombudsman",
+      "name": "Service Complaints Ombudsman for the Armed Forces",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "service-prosecuting-authority",
+      "name": "Service Prosecuting Authority",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "single-source-regulations-office",
+      "name": "Single Source Regulations Office",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "sir-john-soanes-museum",
+      "name": "Sir John Soane's Museum",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "skills-england",
+      "name": "Skills England",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "small-business-commissioner",
+      "name": "Small Business Commissioner",
+      "org_type": "Other",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "social-mobility-commission",
+      "name": "Social Mobility Commission",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "social-science-research-committee",
+      "name": "Social Science Research Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Food Standards Agency",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "social-security-advisory-committee",
+      "name": "Social Security Advisory Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Work & Pensions",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "social-work-england",
+      "name": "Social Work England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "sport-england",
+      "name": "Sport England",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "sports-grounds-safety-authority",
+      "name": "Sports Grounds Safety Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "standards-and-testing-agency",
+      "name": "Standards and Testing Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "student-loans-company",
+      "name": "Student Loans Company",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "submarine-delivery-agency",
+      "name": "Submarine Delivery Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "supreme-court-of-the-united-kingdom",
+      "name": "Supreme Court of the United Kingdom",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "surveillance-camera-commissioner",
+      "name": "Surveillance Camera Commissioner",
+      "org_type": "Other",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "tate",
+      "name": "Tate",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "teaching-regulation-agency",
+      "name": "Teaching Regulation Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Education",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "technical-advisory-board",
+      "name": "Technical Advisory Board",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Home Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-theatres-trust",
+      "name": "The Theatres Trust",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "trade-remedies-authority",
+      "name": "Trade Remedies Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "traffic-commissioners",
+      "name": "Traffic Commissioners for Great Britain",
+      "org_type": "Other",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "transport-focus",
+      "name": "Transport Focus",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "treasure-valuation-committee",
+      "name": "Treasure Valuation Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "tribunal-procedure-committee",
+      "name": "Tribunal Procedure Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "trinity-house",
+      "name": "Trinity House",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-anti-doping",
+      "name": "UK Anti-Doping",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-atomic-energy-authority",
+      "name": "UK Atomic Energy Authority",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-debt-management-office",
+      "name": "UK Debt Management Office",
+      "org_type": "Executive agency",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-export-finance",
+      "name": "UK Export Finance",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-financial-investments-limited",
+      "name": "UK Financial Investments Limited",
+      "org_type": "Other",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-health-security-agency",
+      "name": "UK Health Security Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department of Health & Social Care",
+      "staff_count": 5500,
+      "staff_count_estimated": false,
+      "staff_source": "approx_public_workforce_stats"
+    },
+    {
+      "id": "uk-hydrographic-office",
+      "name": "UK Hydrographic Office",
+      "org_type": "Executive agency",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-infrastructure-bank",
+      "name": "UK Infrastructure Bank",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "HM Treasury",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-research-and-innovation",
+      "name": "UK Research and Innovation",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Science, Innovation & Technology",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-space-agency",
+      "name": "UK Space Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Business & Trade",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-sport",
+      "name": "UK Sport",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-statistics-authority",
+      "name": "UK Statistics Authority",
+      "org_type": "Non-ministerial department",
+      "parent_department": "Cabinet Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-trade-and-investment",
+      "name": "UK Trade & Investment",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "uk-visas-and-immigration",
+      "name": "UK Visas and Immigration",
+      "org_type": "Unknown (from service catalogue only)",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "valuation-office-agency",
+      "name": "Valuation Office Agency",
+      "org_type": "Executive agency",
+      "parent_department": "HM Revenue & Customs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "valuation-tribunal-service",
+      "name": "Valuation Tribunal Service",
+      "org_type": "Other",
+      "parent_department": "Ministry of Housing, Communities & Local Government",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "vehicle-certification-agency",
+      "name": "Vehicle Certification Agency",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Transport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "veterans-advisory-and-pensions-committees",
+      "name": "Veterans Advisory and Pensions Committees",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "veterinary-medicines-directorate",
+      "name": "Veterinary Medicines Directorate",
+      "org_type": "Executive agency",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "veterinary-products-committee",
+      "name": "Veterinary Products Committee",
+      "org_type": "Advisory non-departmental public body",
+      "parent_department": "Department for Environment, Food & Rural Affairs",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "victims-commissioner",
+      "name": "Victims' Commissioner",
+      "org_type": "Other",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "victoria-and-albert-museum",
+      "name": "Victoria and Albert Museum",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "visitbritain",
+      "name": "VisitBritain",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "visitengland",
+      "name": "VisitEngland",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "office-of-the-secretary-of-state-for-wales",
+      "name": "Wales Office",
+      "org_type": "Ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "wallace-collection",
+      "name": "Wallace Collection",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Department for Culture, Media & Sport",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "war-pensions-committees",
+      "name": "War Pensions Committees",
+      "org_type": "Other",
+      "parent_department": "Ministry of Defence",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "the-water-services-regulation-authority",
+      "name": "The Water Services Regulation Authority",
+      "org_type": "Non-ministerial department",
+      "parent_department": null,
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "westminster-foundation-for-democracy",
+      "name": "Westminster Foundation for Democracy",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Foreign, Commonwealth & Development Office",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    },
+    {
+      "id": "youth-justice-board-for-england-and-wales",
+      "name": "Youth Justice Board for England and Wales",
+      "org_type": "Executive non-departmental public body",
+      "parent_department": "Ministry of Justice",
+      "staff_count": null,
+      "staff_count_estimated": false,
+      "staff_source": null
+    }
+  ]
+}

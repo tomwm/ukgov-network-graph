@@ -1,0 +1,2463 @@
+{
+  "metadata": {
+    "description": "Citizen journey maps showing how people move between government organisations during major life events. Each journey represents a real end-to-end process that citizens navigate, derived from GOV.UK step-by-step guides and published service paths.",
+    "edge_meaning": "An edge from org A to org B means a citizen completing this journey must interact with org A, then subsequently with org B. This represents a handoff in the citizen experience.",
+    "generated_date": "2026-03-10",
+    "sources": [
+      "GOV.UK step-by-step guides",
+      "GOV.UK service register",
+      "Published operational processes"
+    ]
+  },
+  "journeys": [
+    {
+      "id": "start-a-business",
+      "name": "Start a limited company",
+      "description": "The end-to-end journey of setting up a private limited company in the UK, from choosing a structure through to trading.",
+      "life_event": "Starting a business",
+      "source": "https://www.gov.uk/set-up-limited-company",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Check if a limited company is right for you",
+          "organisations": [
+            {
+              "name": "Government Digital Service",
+              "id": "government-digital-service"
+            }
+          ],
+          "services": [
+            "GOV.UK guidance"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Choose company name and check availability",
+          "organisations": [
+            {
+              "name": "Companies House",
+              "id": "companies-house"
+            }
+          ],
+          "services": [
+            "Find and update company information"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Check existing trade marks",
+          "organisations": [
+            {
+              "name": "Intellectual Property Office",
+              "id": "intellectual-property-office"
+            }
+          ],
+          "services": [
+            "Search for intellectual property"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 4,
+          "action": "Register your company with Companies House",
+          "organisations": [
+            {
+              "name": "Companies House",
+              "id": "companies-house"
+            }
+          ],
+          "services": [
+            "Register your company"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Register for Corporation Tax with HMRC",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Business tax account"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Register for VAT (if turnover over threshold)",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Manage your VAT account"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 7,
+          "action": "Register as employer for PAYE",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "PAYE for employers"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 8,
+          "action": "Set up workplace pension",
+          "organisations": [
+            {
+              "name": "The Pensions Regulator",
+              "id": "the-pensions-regulator"
+            }
+          ],
+          "services": [
+            "Workplace pension duties"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 9,
+          "action": "Get business insurance (employers' liability)",
+          "organisations": [
+            {
+              "name": "Health and Safety Executive",
+              "id": "health-and-safety-executive"
+            }
+          ],
+          "services": [
+            "Employers' liability insurance"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 10,
+          "action": "Apply for relevant licences (e.g. food, alcohol, premises)",
+          "organisations": [
+            {
+              "name": "Department for Business and Trade",
+              "id": "department-for-business-and-trade"
+            }
+          ],
+          "services": [
+            "Licence finder"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 11,
+          "action": "Register for Self Assessment (if director)",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Estimate your Self Assessment tax bill"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 12,
+          "action": "File annual accounts and tax return",
+          "organisations": [
+            {
+              "name": "Companies House",
+              "id": "companies-house"
+            },
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "File your accounts and Company Tax Return"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "government-digital-service",
+          "to_org": "companies-house",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check if a limited company is right for you",
+          "to_action": "Choose company name and check availability",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "companies-house",
+          "to_org": "intellectual-property-office",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Choose company name and check availability",
+          "to_action": "Check existing trade marks",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "intellectual-property-office",
+          "to_org": "companies-house",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check existing trade marks",
+          "to_action": "Register your company with Companies House",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "companies-house",
+          "to_org": "hm-revenue-customs",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Register your company with Companies House",
+          "to_action": "Register for Corporation Tax with HMRC",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "the-pensions-regulator",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Register as employer for PAYE",
+          "to_action": "Set up workplace pension",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "the-pensions-regulator",
+          "to_org": "health-and-safety-executive",
+          "from_step": 8,
+          "to_step": 9,
+          "from_action": "Set up workplace pension",
+          "to_action": "Get business insurance (employers' liability)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "health-and-safety-executive",
+          "to_org": "department-for-business-and-trade",
+          "from_step": 9,
+          "to_step": 10,
+          "from_action": "Get business insurance (employers' liability)",
+          "to_action": "Apply for relevant licences (e.g. food, alcohol, premises)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "department-for-business-and-trade",
+          "to_org": "hm-revenue-customs",
+          "from_step": 10,
+          "to_step": 11,
+          "from_action": "Apply for relevant licences (e.g. food, alcohol, premises)",
+          "to_action": "Register for Self Assessment (if director)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "companies-house",
+          "from_step": 11,
+          "to_step": 12,
+          "from_action": "Register for Self Assessment (if director)",
+          "to_action": "File annual accounts and tax return",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 12,
+        "mandatory_steps": 6,
+        "unique_organisations": 7,
+        "handoff_count": 9
+      }
+    },
+    {
+      "id": "learn-to-drive",
+      "name": "Learn to drive a car",
+      "description": "From provisional licence to full driving licence — the complete journey through DVLA and DVSA.",
+      "life_event": "Learning to drive",
+      "source": "https://www.gov.uk/learn-to-drive-a-car",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Check you're old enough and meet eyesight rules",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "id": "driver-and-vehicle-licensing-agency"
+            }
+          ],
+          "services": [
+            "Driving with a medical condition"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Apply for provisional driving licence",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "id": "driver-and-vehicle-licensing-agency"
+            }
+          ],
+          "services": [
+            "Apply for your first provisional driving licence"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Take driving lessons and study Highway Code",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Standards Agency",
+              "id": "driver-and-vehicle-standards-agency"
+            }
+          ],
+          "services": [
+            "Find driving schools and instructors"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 4,
+          "action": "Book and take theory test",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Standards Agency",
+              "id": "driver-and-vehicle-standards-agency"
+            }
+          ],
+          "services": [
+            "Book your theory test"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Book and take practical driving test",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Standards Agency",
+              "id": "driver-and-vehicle-standards-agency"
+            }
+          ],
+          "services": [
+            "Book your driving test"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Receive full driving licence",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "id": "driver-and-vehicle-licensing-agency"
+            }
+          ],
+          "services": [
+            "View your driving licence information"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Tax your vehicle",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "id": "driver-and-vehicle-licensing-agency"
+            }
+          ],
+          "services": [
+            "Vehicle Tax"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 8,
+          "action": "Get vehicle MOT (if applicable)",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Standards Agency",
+              "id": "driver-and-vehicle-standards-agency"
+            }
+          ],
+          "services": [
+            "Check if a vehicle is taxed and has an MOT"
+          ],
+          "is_optional": true
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "driver-and-vehicle-licensing-agency",
+          "to_org": "driver-and-vehicle-standards-agency",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Apply for provisional driving licence",
+          "to_action": "Take driving lessons and study Highway Code",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "driver-and-vehicle-standards-agency",
+          "to_org": "driver-and-vehicle-licensing-agency",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Book and take practical driving test",
+          "to_action": "Receive full driving licence",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "driver-and-vehicle-licensing-agency",
+          "to_org": "driver-and-vehicle-standards-agency",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Tax your vehicle",
+          "to_action": "Get vehicle MOT (if applicable)",
+          "is_mandatory": false
+        }
+      ],
+      "stats": {
+        "total_steps": 8,
+        "mandatory_steps": 7,
+        "unique_organisations": 2,
+        "handoff_count": 3
+      }
+    },
+    {
+      "id": "employ-someone",
+      "name": "Employ someone for the first time",
+      "description": "Hiring your first employee — from right-to-work checks through to payroll and pension.",
+      "life_event": "Employing staff",
+      "source": "https://www.gov.uk/employ-someone",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Check employment status of the worker",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Check employment status for tax"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Check right to work in the UK",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Use the Employer Checking Service"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Run DBS criminal record check (if applicable)",
+          "organisations": [
+            {
+              "name": "Disclosure and Barring Service",
+              "id": "disclosure-and-barring-service"
+            }
+          ],
+          "services": [
+            "Request a standard or enhanced DBS check"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 4,
+          "action": "Register as employer with HMRC",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "PAYE for employers"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Get employers' liability insurance",
+          "organisations": [
+            {
+              "name": "Health and Safety Executive",
+              "id": "health-and-safety-executive"
+            }
+          ],
+          "services": [
+            "Employers' liability insurance"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Set up workplace pension",
+          "organisations": [
+            {
+              "name": "The Pensions Regulator",
+              "id": "the-pensions-regulator"
+            }
+          ],
+          "services": [
+            "Workplace pension duties"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Report employee details to HMRC (RTI)",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "PAYE Real Time Information"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "home-office",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check employment status of the worker",
+          "to_action": "Check right to work in the UK",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "disclosure-and-barring-service",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Check right to work in the UK",
+          "to_action": "Run DBS criminal record check (if applicable)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "disclosure-and-barring-service",
+          "to_org": "hm-revenue-customs",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Run DBS criminal record check (if applicable)",
+          "to_action": "Register as employer with HMRC",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "health-and-safety-executive",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Register as employer with HMRC",
+          "to_action": "Get employers' liability insurance",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "health-and-safety-executive",
+          "to_org": "the-pensions-regulator",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Get employers' liability insurance",
+          "to_action": "Set up workplace pension",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "the-pensions-regulator",
+          "to_org": "hm-revenue-customs",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Set up workplace pension",
+          "to_action": "Report employee details to HMRC (RTI)",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 7,
+        "mandatory_steps": 6,
+        "unique_organisations": 5,
+        "handoff_count": 6
+      }
+    },
+    {
+      "id": "when-someone-dies",
+      "name": "What to do when someone dies",
+      "description": "The bereavement journey — from registering a death through to settling the estate.",
+      "life_event": "Bereavement",
+      "source": "https://www.gov.uk/when-someone-dies",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Register the death",
+          "organisations": [
+            {
+              "name": "General Register Office",
+              "id": "general-register-office"
+            }
+          ],
+          "services": [
+            "Register a death"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Tell government departments (Tell Us Once)",
+          "organisations": [
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            },
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            },
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "id": "driver-and-vehicle-licensing-agency"
+            },
+            {
+              "name": "HM Passport Office",
+              "id": "hm-passport-office"
+            }
+          ],
+          "services": [
+            "Tell Us Once service"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Check if you can get bereavement benefits",
+          "organisations": [
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            }
+          ],
+          "services": [
+            "Bereavement Support Payment"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 4,
+          "action": "Manage tax, pensions and benefits changes",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            },
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            }
+          ],
+          "services": [
+            "Tax after someone dies"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Value the estate and check Inheritance Tax",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Work out if Inheritance Tax qualifies for reduced rate"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Apply for probate",
+          "organisations": [
+            {
+              "name": "HM Courts and Tribunals Service",
+              "id": "hm-courts-and-tribunals-service"
+            }
+          ],
+          "services": [
+            "Apply for probate"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Deal with the estate",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            },
+            {
+              "name": "HM Land Registry",
+              "id": "hm-land-registry"
+            }
+          ],
+          "services": [
+            "Estate administration"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "general-register-office",
+          "to_org": "department-for-work-pensions",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Register the death",
+          "to_action": "Tell government departments (Tell Us Once)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "general-register-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Register the death",
+          "to_action": "Tell government departments (Tell Us Once)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "general-register-office",
+          "to_org": "driver-and-vehicle-licensing-agency",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Register the death",
+          "to_action": "Tell government departments (Tell Us Once)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "general-register-office",
+          "to_org": "hm-passport-office",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Register the death",
+          "to_action": "Tell government departments (Tell Us Once)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "department-for-work-pensions",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Tell government departments (Tell Us Once)",
+          "to_action": "Check if you can get bereavement benefits",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "driver-and-vehicle-licensing-agency",
+          "to_org": "department-for-work-pensions",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Tell government departments (Tell Us Once)",
+          "to_action": "Check if you can get bereavement benefits",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "hm-passport-office",
+          "to_org": "department-for-work-pensions",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Tell government departments (Tell Us Once)",
+          "to_action": "Check if you can get bereavement benefits",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "hm-revenue-customs",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check if you can get bereavement benefits",
+          "to_action": "Manage tax, pensions and benefits changes",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "hm-revenue-customs",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Manage tax, pensions and benefits changes",
+          "to_action": "Value the estate and check Inheritance Tax",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "hm-courts-and-tribunals-service",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Value the estate and check Inheritance Tax",
+          "to_action": "Apply for probate",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-courts-and-tribunals-service",
+          "to_org": "hm-revenue-customs",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Apply for probate",
+          "to_action": "Deal with the estate",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-courts-and-tribunals-service",
+          "to_org": "hm-land-registry",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Apply for probate",
+          "to_action": "Deal with the estate",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 7,
+        "mandatory_steps": 6,
+        "unique_organisations": 7,
+        "handoff_count": 12
+      }
+    },
+    {
+      "id": "buy-a-home",
+      "name": "Buy a home",
+      "description": "From mortgage to moving in — the journey through government touchpoints when buying property.",
+      "life_event": "Buying a home",
+      "source": "https://www.gov.uk/buying-a-home",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Check Help to Buy and shared ownership schemes",
+          "organisations": [
+            {
+              "name": "Homes England",
+              "id": "homes-england"
+            },
+            {
+              "name": "Ministry of Housing, Communities and Local Government",
+              "id": "ministry-of-housing-communities-and-local-government"
+            }
+          ],
+          "services": [
+            "Help to Buy"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 2,
+          "action": "Search local authority planning and building records",
+          "organisations": [
+            {
+              "name": "HM Land Registry",
+              "id": "hm-land-registry"
+            },
+            {
+              "name": "Environment Agency",
+              "id": "environment-agency"
+            }
+          ],
+          "services": [
+            "Use land and property data"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Check flood risk",
+          "organisations": [
+            {
+              "name": "Environment Agency",
+              "id": "environment-agency"
+            }
+          ],
+          "services": [
+            "Sign up for flood warnings"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 4,
+          "action": "Get an Energy Performance Certificate",
+          "organisations": [
+            {
+              "name": "Ministry of Housing, Communities and Local Government",
+              "id": "ministry-of-housing-communities-and-local-government"
+            }
+          ],
+          "services": [
+            "Get a new energy certificate"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Transfer ownership (conveyancing) and land registration",
+          "organisations": [
+            {
+              "name": "HM Land Registry",
+              "id": "hm-land-registry"
+            }
+          ],
+          "services": [
+            "Use land and property data"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Pay Stamp Duty Land Tax",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Log in and file your Stamp Duty Land Tax return"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Register for Council Tax",
+          "organisations": [
+            {
+              "name": "Valuation Office Agency",
+              "id": "valuation-office-agency"
+            }
+          ],
+          "services": [
+            "Find your business rates valuation"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "homes-england",
+          "to_org": "hm-land-registry",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check Help to Buy and shared ownership schemes",
+          "to_action": "Search local authority planning and building records",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "homes-england",
+          "to_org": "environment-agency",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check Help to Buy and shared ownership schemes",
+          "to_action": "Search local authority planning and building records",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "ministry-of-housing-communities-and-local-government",
+          "to_org": "hm-land-registry",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check Help to Buy and shared ownership schemes",
+          "to_action": "Search local authority planning and building records",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "ministry-of-housing-communities-and-local-government",
+          "to_org": "environment-agency",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check Help to Buy and shared ownership schemes",
+          "to_action": "Search local authority planning and building records",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-land-registry",
+          "to_org": "environment-agency",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Search local authority planning and building records",
+          "to_action": "Check flood risk",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "environment-agency",
+          "to_org": "ministry-of-housing-communities-and-local-government",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check flood risk",
+          "to_action": "Get an Energy Performance Certificate",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "ministry-of-housing-communities-and-local-government",
+          "to_org": "hm-land-registry",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Get an Energy Performance Certificate",
+          "to_action": "Transfer ownership (conveyancing) and land registration",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-land-registry",
+          "to_org": "hm-revenue-customs",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Transfer ownership (conveyancing) and land registration",
+          "to_action": "Pay Stamp Duty Land Tax",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "valuation-office-agency",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Pay Stamp Duty Land Tax",
+          "to_action": "Register for Council Tax",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 7,
+        "mandatory_steps": 6,
+        "unique_organisations": 6,
+        "handoff_count": 9
+      }
+    },
+    {
+      "id": "come-to-uk-to-work",
+      "name": "Come to the UK on a work visa",
+      "description": "The immigration journey for a Skilled Worker — from visa application to settling.",
+      "life_event": "Immigration (work)",
+      "source": "https://www.gov.uk/apply-to-come-to-the-uk",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Employer obtains sponsor licence",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            },
+            {
+              "name": "UK Visas and Immigration",
+              "id": "uk-visas-and-immigration"
+            }
+          ],
+          "services": [
+            "Sponsor licence"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Apply for Skilled Worker visa",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            },
+            {
+              "name": "UK Visas and Immigration",
+              "id": "uk-visas-and-immigration"
+            }
+          ],
+          "services": [
+            "Apply for a Skilled Worker visa"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Prove identity (biometrics appointment)",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Identity verification"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 4,
+          "action": "Pay Immigration Health Surcharge",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            },
+            {
+              "name": "NHS England",
+              "id": "nhs-england"
+            }
+          ],
+          "services": [
+            "Immigration Health Surcharge"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Collect BRP or use digital immigration status",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "View and prove your immigration status"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Get National Insurance number",
+          "organisations": [
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            },
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Apply for a National Insurance number"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Open a bank account (prove right to work)",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Use the Employer Checking Service"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 8,
+          "action": "Register with GP",
+          "organisations": [
+            {
+              "name": "NHS England",
+              "id": "nhs-england"
+            }
+          ],
+          "services": [
+            "Register with a GP Practice"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 9,
+          "action": "Apply for settlement (Indefinite Leave to Remain) after 5 years",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            },
+            {
+              "name": "UK Visas and Immigration",
+              "id": "uk-visas-and-immigration"
+            }
+          ],
+          "services": [
+            "Apply for settlement"
+          ],
+          "is_optional": true
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "home-office",
+          "to_org": "uk-visas-and-immigration",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Employer obtains sponsor licence",
+          "to_action": "Apply for Skilled Worker visa",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "uk-visas-and-immigration",
+          "to_org": "home-office",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Employer obtains sponsor licence",
+          "to_action": "Apply for Skilled Worker visa",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "uk-visas-and-immigration",
+          "to_org": "home-office",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Apply for Skilled Worker visa",
+          "to_action": "Prove identity (biometrics appointment)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "nhs-england",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Prove identity (biometrics appointment)",
+          "to_action": "Pay Immigration Health Surcharge",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "nhs-england",
+          "to_org": "home-office",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Pay Immigration Health Surcharge",
+          "to_action": "Collect BRP or use digital immigration status",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "department-for-work-pensions",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Collect BRP or use digital immigration status",
+          "to_action": "Get National Insurance number",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Collect BRP or use digital immigration status",
+          "to_action": "Get National Insurance number",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "home-office",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Get National Insurance number",
+          "to_action": "Open a bank account (prove right to work)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "home-office",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Get National Insurance number",
+          "to_action": "Open a bank account (prove right to work)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "nhs-england",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Open a bank account (prove right to work)",
+          "to_action": "Register with GP",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "nhs-england",
+          "to_org": "home-office",
+          "from_step": 8,
+          "to_step": 9,
+          "from_action": "Register with GP",
+          "to_action": "Apply for settlement (Indefinite Leave to Remain) after 5 years",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "nhs-england",
+          "to_org": "uk-visas-and-immigration",
+          "from_step": 8,
+          "to_step": 9,
+          "from_action": "Register with GP",
+          "to_action": "Apply for settlement (Indefinite Leave to Remain) after 5 years",
+          "is_mandatory": false
+        }
+      ],
+      "stats": {
+        "total_steps": 9,
+        "mandatory_steps": 8,
+        "unique_organisations": 5,
+        "handoff_count": 12
+      }
+    },
+    {
+      "id": "import-goods",
+      "name": "Import goods into the UK",
+      "description": "The end-to-end process of importing goods commercially into the UK.",
+      "life_event": "International trade",
+      "source": "https://www.gov.uk/import-goods-into-uk",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Get an EORI number",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Get an EORI number"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Classify goods with commodity code",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "UK Integrated Online Tariff"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Check for import licences (animals, food, chemicals)",
+          "organisations": [
+            {
+              "name": "Department for Environment, Food and Rural Affairs",
+              "id": "department-for-environment-food-rural-affairs"
+            },
+            {
+              "name": "Animal and Plant Health Agency",
+              "id": "animal-and-plant-health-agency"
+            }
+          ],
+          "services": [
+            "Import of products, animals, food and feed service"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 4,
+          "action": "Get export health certificate (if food/animals)",
+          "organisations": [
+            {
+              "name": "Animal and Plant Health Agency",
+              "id": "animal-and-plant-health-agency"
+            }
+          ],
+          "services": [
+            "Get an export health certificate"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 5,
+          "action": "Check customs duty rates and trade agreements",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            },
+            {
+              "name": "Department for Business and Trade",
+              "id": "department-for-business-and-trade"
+            }
+          ],
+          "services": [
+            "Check how to import or export goods"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Make customs declaration",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Customs declaration service"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Pay customs duty and import VAT",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Pay your tax"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 8,
+          "action": "Check labelling and product safety standards",
+          "organisations": [
+            {
+              "name": "Office for Product Safety and Standards",
+              "id": "office-for-product-safety-and-standards"
+            },
+            {
+              "name": "Department for Business and Trade",
+              "id": "department-for-business-and-trade"
+            }
+          ],
+          "services": [
+            "Product safety and standards"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "department-for-environment-food-rural-affairs",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Classify goods with commodity code",
+          "to_action": "Check for import licences (animals, food, chemicals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "animal-and-plant-health-agency",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Classify goods with commodity code",
+          "to_action": "Check for import licences (animals, food, chemicals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "department-for-environment-food-rural-affairs",
+          "to_org": "animal-and-plant-health-agency",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check for import licences (animals, food, chemicals)",
+          "to_action": "Get export health certificate (if food/animals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "animal-and-plant-health-agency",
+          "to_org": "hm-revenue-customs",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Get export health certificate (if food/animals)",
+          "to_action": "Check customs duty rates and trade agreements",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "animal-and-plant-health-agency",
+          "to_org": "department-for-business-and-trade",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Get export health certificate (if food/animals)",
+          "to_action": "Check customs duty rates and trade agreements",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-business-and-trade",
+          "to_org": "hm-revenue-customs",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Check customs duty rates and trade agreements",
+          "to_action": "Make customs declaration",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "office-for-product-safety-and-standards",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Pay customs duty and import VAT",
+          "to_action": "Check labelling and product safety standards",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "department-for-business-and-trade",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Pay customs duty and import VAT",
+          "to_action": "Check labelling and product safety standards",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 8,
+        "mandatory_steps": 6,
+        "unique_organisations": 5,
+        "handoff_count": 8
+      }
+    },
+    {
+      "id": "get-married",
+      "name": "Get married in England or Wales",
+      "description": "From giving notice to changing your name — the government touchpoints around getting married.",
+      "life_event": "Getting married",
+      "source": "https://www.gov.uk/marriages-civil-partnerships",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Check eligibility (age, immigration status)",
+          "organisations": [
+            {
+              "name": "General Register Office",
+              "id": "general-register-office"
+            }
+          ],
+          "services": [
+            "Marriage guidance"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Give notice at register office",
+          "organisations": [
+            {
+              "name": "General Register Office",
+              "id": "general-register-office"
+            }
+          ],
+          "services": [
+            "Give notice of marriage"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Immigration check (if non-UK/Irish partner)",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Immigration status check"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 4,
+          "action": "Marriage ceremony",
+          "organisations": [
+            {
+              "name": "General Register Office",
+              "id": "general-register-office"
+            }
+          ],
+          "services": [
+            "Marriage registration"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Order marriage certificate",
+          "organisations": [
+            {
+              "name": "General Register Office",
+              "id": "general-register-office"
+            },
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Order a birth, death, marriage or civil partnership certificate"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Update name with HMRC",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Tell HMRC about a change to your personal details"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Update driving licence name",
+          "organisations": [
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "id": "driver-and-vehicle-licensing-agency"
+            }
+          ],
+          "services": [
+            "Renew your driving licence"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 8,
+          "action": "Update passport name",
+          "organisations": [
+            {
+              "name": "HM Passport Office",
+              "id": "hm-passport-office"
+            }
+          ],
+          "services": [
+            "Apply for or renew passport"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 9,
+          "action": "Check Marriage Allowance for tax",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Marriage Allowance"
+          ],
+          "is_optional": true
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "general-register-office",
+          "to_org": "home-office",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Give notice at register office",
+          "to_action": "Immigration check (if non-UK/Irish partner)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "general-register-office",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Immigration check (if non-UK/Irish partner)",
+          "to_action": "Marriage ceremony",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "general-register-office",
+          "to_org": "home-office",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Marriage ceremony",
+          "to_action": "Order marriage certificate",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "general-register-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Order marriage certificate",
+          "to_action": "Update name with HMRC",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Order marriage certificate",
+          "to_action": "Update name with HMRC",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "driver-and-vehicle-licensing-agency",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Update name with HMRC",
+          "to_action": "Update driving licence name",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "driver-and-vehicle-licensing-agency",
+          "to_org": "hm-passport-office",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Update driving licence name",
+          "to_action": "Update passport name",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-passport-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 8,
+          "to_step": 9,
+          "from_action": "Update passport name",
+          "to_action": "Check Marriage Allowance for tax",
+          "is_mandatory": false
+        }
+      ],
+      "stats": {
+        "total_steps": 9,
+        "mandatory_steps": 7,
+        "unique_organisations": 5,
+        "handoff_count": 8
+      }
+    },
+    {
+      "id": "appeal-benefit-decision",
+      "name": "Appeal a benefit decision",
+      "description": "Challenging a DWP benefits decision through mandatory reconsideration and tribunal.",
+      "life_event": "Benefits dispute",
+      "source": "https://www.gov.uk/appeal-benefit-decision",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Request mandatory reconsideration from DWP",
+          "organisations": [
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            }
+          ],
+          "services": [
+            "Mandatory reconsideration"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Get advice (Citizens Advice, legal aid)",
+          "organisations": [
+            {
+              "name": "Legal Aid Agency",
+              "id": "legal-aid-agency"
+            },
+            {
+              "name": "Ministry of Justice",
+              "id": "ministry-of-justice"
+            }
+          ],
+          "services": [
+            "Legal aid eligibility check"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 3,
+          "action": "Submit appeal to HM Courts & Tribunals Service",
+          "organisations": [
+            {
+              "name": "HM Courts and Tribunals Service",
+              "id": "hm-courts-and-tribunals-service"
+            }
+          ],
+          "services": [
+            "Appeal a benefit decision"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 4,
+          "action": "DWP provides response to tribunal",
+          "organisations": [
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            },
+            {
+              "name": "HM Courts and Tribunals Service",
+              "id": "hm-courts-and-tribunals-service"
+            }
+          ],
+          "services": [
+            "Tribunal case management"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Attend tribunal hearing",
+          "organisations": [
+            {
+              "name": "HM Courts and Tribunals Service",
+              "id": "hm-courts-and-tribunals-service"
+            }
+          ],
+          "services": [
+            "First-tier Tribunal (Social Security)"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Request Upper Tribunal review (if unhappy)",
+          "organisations": [
+            {
+              "name": "HM Courts and Tribunals Service",
+              "id": "hm-courts-and-tribunals-service"
+            }
+          ],
+          "services": [
+            "Upper Tribunal"
+          ],
+          "is_optional": true
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "legal-aid-agency",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Request mandatory reconsideration from DWP",
+          "to_action": "Get advice (Citizens Advice, legal aid)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "ministry-of-justice",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Request mandatory reconsideration from DWP",
+          "to_action": "Get advice (Citizens Advice, legal aid)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "legal-aid-agency",
+          "to_org": "hm-courts-and-tribunals-service",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Get advice (Citizens Advice, legal aid)",
+          "to_action": "Submit appeal to HM Courts & Tribunals Service",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "ministry-of-justice",
+          "to_org": "hm-courts-and-tribunals-service",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Get advice (Citizens Advice, legal aid)",
+          "to_action": "Submit appeal to HM Courts & Tribunals Service",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-courts-and-tribunals-service",
+          "to_org": "department-for-work-pensions",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Submit appeal to HM Courts & Tribunals Service",
+          "to_action": "DWP provides response to tribunal",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "hm-courts-and-tribunals-service",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "DWP provides response to tribunal",
+          "to_action": "Attend tribunal hearing",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 6,
+        "mandatory_steps": 4,
+        "unique_organisations": 4,
+        "handoff_count": 6
+      }
+    },
+    {
+      "id": "become-british-citizen",
+      "name": "Become a British citizen",
+      "description": "The naturalisation journey — from eligibility check through ceremony.",
+      "life_event": "Citizenship",
+      "source": "https://www.gov.uk/british-citizenship",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Check eligibility for naturalisation",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            },
+            {
+              "name": "UK Visas and Immigration",
+              "id": "uk-visas-and-immigration"
+            }
+          ],
+          "services": [
+            "Check British citizenship eligibility"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Pass Life in the UK test",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Life in the UK test"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Meet English language requirement",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "English language requirement"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 4,
+          "action": "Apply for naturalisation",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            },
+            {
+              "name": "UK Visas and Immigration",
+              "id": "uk-visas-and-immigration"
+            }
+          ],
+          "services": [
+            "Apply for citizenship"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Attend citizenship ceremony",
+          "organisations": [
+            {
+              "name": "Home Office",
+              "id": "home-office"
+            }
+          ],
+          "services": [
+            "Citizenship ceremony"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Apply for British passport",
+          "organisations": [
+            {
+              "name": "HM Passport Office",
+              "id": "hm-passport-office"
+            }
+          ],
+          "services": [
+            "Apply for or renew passport"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "uk-visas-and-immigration",
+          "to_org": "home-office",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Check eligibility for naturalisation",
+          "to_action": "Pass Life in the UK test",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "uk-visas-and-immigration",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Meet English language requirement",
+          "to_action": "Apply for naturalisation",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "uk-visas-and-immigration",
+          "to_org": "home-office",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Apply for naturalisation",
+          "to_action": "Attend citizenship ceremony",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "home-office",
+          "to_org": "hm-passport-office",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Attend citizenship ceremony",
+          "to_action": "Apply for British passport",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 6,
+        "mandatory_steps": 6,
+        "unique_organisations": 3,
+        "handoff_count": 4
+      }
+    },
+    {
+      "id": "have-a-baby",
+      "name": "Have a baby",
+      "description": "Government touchpoints from pregnancy through the first year — NHS, registration, benefits, and employment rights.",
+      "life_event": "Having a child",
+      "source": "https://www.gov.uk/browse/childcare-parenting",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Antenatal care and maternity services",
+          "organisations": [
+            {
+              "name": "NHS England",
+              "id": "nhs-england"
+            }
+          ],
+          "services": [
+            "NHS maternity services"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Tell employer about pregnancy (maternity leave)",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Statutory Maternity Pay"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Apply for Maternity Allowance (if not eligible for SMP)",
+          "organisations": [
+            {
+              "name": "Department for Work and Pensions",
+              "id": "department-for-work-pensions"
+            }
+          ],
+          "services": [
+            "Maternity Allowance"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 4,
+          "action": "Register the birth",
+          "organisations": [
+            {
+              "name": "General Register Office",
+              "id": "general-register-office"
+            }
+          ],
+          "services": [
+            "Register a birth"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 5,
+          "action": "Claim Child Benefit",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Claim Child Benefit"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Get a National Insurance number for child",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Child NI number"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 7,
+          "action": "Apply for child's passport",
+          "organisations": [
+            {
+              "name": "HM Passport Office",
+              "id": "hm-passport-office"
+            }
+          ],
+          "services": [
+            "Apply for or renew passport"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 8,
+          "action": "Apply for Tax-Free Childcare or 30 hours free childcare",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "The Childcare service"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 9,
+          "action": "Register with GP for child",
+          "organisations": [
+            {
+              "name": "NHS England",
+              "id": "nhs-england"
+            }
+          ],
+          "services": [
+            "Register with a GP Practice"
+          ],
+          "is_optional": false
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "nhs-england",
+          "to_org": "hm-revenue-customs",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Antenatal care and maternity services",
+          "to_action": "Tell employer about pregnancy (maternity leave)",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "department-for-work-pensions",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Tell employer about pregnancy (maternity leave)",
+          "to_action": "Apply for Maternity Allowance (if not eligible for SMP)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "department-for-work-pensions",
+          "to_org": "general-register-office",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Apply for Maternity Allowance (if not eligible for SMP)",
+          "to_action": "Register the birth",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "general-register-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Register the birth",
+          "to_action": "Claim Child Benefit",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "hm-passport-office",
+          "from_step": 6,
+          "to_step": 7,
+          "from_action": "Get a National Insurance number for child",
+          "to_action": "Apply for child's passport",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "hm-passport-office",
+          "to_org": "hm-revenue-customs",
+          "from_step": 7,
+          "to_step": 8,
+          "from_action": "Apply for child's passport",
+          "to_action": "Apply for Tax-Free Childcare or 30 hours free childcare",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "nhs-england",
+          "from_step": 8,
+          "to_step": 9,
+          "from_action": "Apply for Tax-Free Childcare or 30 hours free childcare",
+          "to_action": "Register with GP for child",
+          "is_mandatory": true
+        }
+      ],
+      "stats": {
+        "total_steps": 9,
+        "mandatory_steps": 6,
+        "unique_organisations": 5,
+        "handoff_count": 7
+      }
+    },
+    {
+      "id": "export-goods",
+      "name": "Export goods from the UK",
+      "description": "The journey of exporting goods commercially from the UK.",
+      "life_event": "International trade",
+      "source": "https://www.gov.uk/export-goods",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Get an EORI number",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Get an EORI number"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 2,
+          "action": "Classify goods and check export controls",
+          "organisations": [
+            {
+              "name": "Department for Business and Trade",
+              "id": "department-for-business-and-trade"
+            }
+          ],
+          "services": [
+            "Apply for an export certificate"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 3,
+          "action": "Check destination country requirements",
+          "organisations": [
+            {
+              "name": "Department for Business and Trade",
+              "id": "department-for-business-and-trade"
+            },
+            {
+              "name": "Foreign, Commonwealth and Development Office",
+              "id": "foreign-commonwealth-development-office"
+            }
+          ],
+          "services": [
+            "Check duties and customs procedures for exporting goods"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 4,
+          "action": "Get export health certificate (if food/animals)",
+          "organisations": [
+            {
+              "name": "Animal and Plant Health Agency",
+              "id": "animal-and-plant-health-agency"
+            },
+            {
+              "name": "Department for Environment, Food and Rural Affairs",
+              "id": "department-for-environment-food-rural-affairs"
+            }
+          ],
+          "services": [
+            "Get an export health certificate"
+          ],
+          "is_optional": true
+        },
+        {
+          "step": 5,
+          "action": "Make export customs declaration",
+          "organisations": [
+            {
+              "name": "HM Revenue and Customs",
+              "id": "hm-revenue-customs"
+            }
+          ],
+          "services": [
+            "Customs declaration service"
+          ],
+          "is_optional": false
+        },
+        {
+          "step": 6,
+          "action": "Get export finance guarantee (if needed)",
+          "organisations": [
+            {
+              "name": "UK Export Finance",
+              "id": "uk-export-finance"
+            }
+          ],
+          "services": [
+            "Get a guarantee for export finance"
+          ],
+          "is_optional": true
+        }
+      ],
+      "handoff_edges": [
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "department-for-business-and-trade",
+          "from_step": 1,
+          "to_step": 2,
+          "from_action": "Get an EORI number",
+          "to_action": "Classify goods and check export controls",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-business-and-trade",
+          "to_org": "foreign-commonwealth-development-office",
+          "from_step": 2,
+          "to_step": 3,
+          "from_action": "Classify goods and check export controls",
+          "to_action": "Check destination country requirements",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-business-and-trade",
+          "to_org": "animal-and-plant-health-agency",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check destination country requirements",
+          "to_action": "Get export health certificate (if food/animals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "department-for-business-and-trade",
+          "to_org": "department-for-environment-food-rural-affairs",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check destination country requirements",
+          "to_action": "Get export health certificate (if food/animals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "foreign-commonwealth-development-office",
+          "to_org": "animal-and-plant-health-agency",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check destination country requirements",
+          "to_action": "Get export health certificate (if food/animals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "foreign-commonwealth-development-office",
+          "to_org": "department-for-environment-food-rural-affairs",
+          "from_step": 3,
+          "to_step": 4,
+          "from_action": "Check destination country requirements",
+          "to_action": "Get export health certificate (if food/animals)",
+          "is_mandatory": false
+        },
+        {
+          "from_org": "animal-and-plant-health-agency",
+          "to_org": "hm-revenue-customs",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Get export health certificate (if food/animals)",
+          "to_action": "Make export customs declaration",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "department-for-environment-food-rural-affairs",
+          "to_org": "hm-revenue-customs",
+          "from_step": 4,
+          "to_step": 5,
+          "from_action": "Get export health certificate (if food/animals)",
+          "to_action": "Make export customs declaration",
+          "is_mandatory": true
+        },
+        {
+          "from_org": "hm-revenue-customs",
+          "to_org": "uk-export-finance",
+          "from_step": 5,
+          "to_step": 6,
+          "from_action": "Make export customs declaration",
+          "to_action": "Get export finance guarantee (if needed)",
+          "is_mandatory": false
+        }
+      ],
+      "stats": {
+        "total_steps": 6,
+        "mandatory_steps": 4,
+        "unique_organisations": 6,
+        "handoff_count": 9
+      }
+    }
+  ]
+}

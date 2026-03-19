@@ -1,0 +1,741 @@
+{
+  "metadata": {
+    "description": "Common acronyms, abbreviations, and alternative names for UK government organisations. Use alongside uk_gov_org_dependency.json to power search — match user input against aliases to resolve to the node id.",
+    "usage": "For each entry, 'id' matches the node id in the dependency graph. 'aliases' contains common acronyms and short names people actually search for."
+  },
+  "aliases": [
+    {
+      "id": "acas",
+      "aliases": [
+        "ACAS"
+      ]
+    },
+    {
+      "id": "advanced-research-and-invention-agency",
+      "aliases": [
+        "ARIA"
+      ]
+    },
+    {
+      "id": "air-accidents-investigation-branch",
+      "aliases": [
+        "AAIB"
+      ]
+    },
+    {
+      "id": "animal-and-plant-health-agency",
+      "aliases": [
+        "APHA"
+      ]
+    },
+    {
+      "id": "arts-council-england",
+      "aliases": [
+        "ACE"
+      ]
+    },
+    {
+      "id": "attorney-generals-office",
+      "aliases": [
+        "AGO"
+      ]
+    },
+    {
+      "id": "border-force",
+      "aliases": [
+        "BF"
+      ]
+    },
+    {
+      "id": "british-business-bank",
+      "aliases": [
+        "BBB"
+      ]
+    },
+    {
+      "id": "british-film-institute",
+      "aliases": [
+        "BFI"
+      ]
+    },
+    {
+      "id": "cabinet-office",
+      "aliases": [
+        "CO"
+      ]
+    },
+    {
+      "id": "care-quality-commission",
+      "aliases": [
+        "CQC"
+      ]
+    },
+    {
+      "id": "central-digital-and-data-office",
+      "aliases": [
+        "CDDO"
+      ]
+    },
+    {
+      "id": "centre-for-environment-fisheries-and-aquaculture-science",
+      "aliases": [
+        "Cefas",
+        "CEFAS"
+      ]
+    },
+    {
+      "id": "charity-commission",
+      "aliases": [
+        "CC",
+        "Charity Commission"
+      ]
+    },
+    {
+      "id": "civil-aviation-authority",
+      "aliases": [
+        "CAA"
+      ]
+    },
+    {
+      "id": "college-of-policing",
+      "aliases": [
+        "CoP"
+      ]
+    },
+    {
+      "id": "companies-house",
+      "aliases": [
+        "CH"
+      ]
+    },
+    {
+      "id": "competition-and-markets-authority",
+      "aliases": [
+        "CMA"
+      ]
+    },
+    {
+      "id": "criminal-cases-review-commission",
+      "aliases": [
+        "CCRC"
+      ]
+    },
+    {
+      "id": "criminal-injuries-compensation-authority",
+      "aliases": [
+        "CICA"
+      ]
+    },
+    {
+      "id": "crown-commercial-service",
+      "aliases": [
+        "CCS"
+      ]
+    },
+    {
+      "id": "crown-prosecution-service",
+      "aliases": [
+        "CPS"
+      ]
+    },
+    {
+      "id": "defence-and-security-accelerator",
+      "aliases": [
+        "DASA"
+      ]
+    },
+    {
+      "id": "defence-electronics-and-components-agency",
+      "aliases": [
+        "DECA"
+      ]
+    },
+    {
+      "id": "defence-equipment-and-support",
+      "aliases": [
+        "DE&S",
+        "DES"
+      ]
+    },
+    {
+      "id": "defence-science-and-technology-laboratory",
+      "aliases": [
+        "Dstl",
+        "DSTL"
+      ]
+    },
+    {
+      "id": "department-for-business-and-trade",
+      "aliases": [
+        "DBT"
+      ]
+    },
+    {
+      "id": "department-for-culture-media-and-sport",
+      "aliases": [
+        "DCMS"
+      ]
+    },
+    {
+      "id": "department-for-education",
+      "aliases": [
+        "DfE",
+        "DFE"
+      ]
+    },
+    {
+      "id": "department-for-energy-security-and-net-zero",
+      "aliases": [
+        "DESNZ"
+      ]
+    },
+    {
+      "id": "department-for-environment-food-rural-affairs",
+      "aliases": [
+        "Defra",
+        "DEFRA"
+      ]
+    },
+    {
+      "id": "department-for-international-trade",
+      "aliases": [
+        "DIT"
+      ]
+    },
+    {
+      "id": "department-for-science-innovation-and-technology",
+      "aliases": [
+        "DSIT"
+      ]
+    },
+    {
+      "id": "department-for-transport",
+      "aliases": [
+        "DfT",
+        "DFT"
+      ]
+    },
+    {
+      "id": "department-for-work-pensions",
+      "aliases": [
+        "DWP"
+      ]
+    },
+    {
+      "id": "department-of-health-and-social-care",
+      "aliases": [
+        "DHSC"
+      ]
+    },
+    {
+      "id": "disclosure-and-barring-service",
+      "aliases": [
+        "DBS"
+      ]
+    },
+    {
+      "id": "driver-and-vehicle-licensing-agency",
+      "aliases": [
+        "DVLA"
+      ]
+    },
+    {
+      "id": "driver-and-vehicle-standards-agency",
+      "aliases": [
+        "DVSA"
+      ]
+    },
+    {
+      "id": "education-and-skills-funding-agency",
+      "aliases": [
+        "ESFA"
+      ]
+    },
+    {
+      "id": "environment-agency",
+      "aliases": [
+        "EA"
+      ]
+    },
+    {
+      "id": "financial-conduct-authority",
+      "aliases": [
+        "FCA"
+      ]
+    },
+    {
+      "id": "food-standards-agency",
+      "aliases": [
+        "FSA"
+      ]
+    },
+    {
+      "id": "foreign-commonwealth-development-office",
+      "aliases": [
+        "FCDO"
+      ]
+    },
+    {
+      "id": "forestry-commission",
+      "aliases": [
+        "FC"
+      ]
+    },
+    {
+      "id": "general-register-office",
+      "aliases": [
+        "GRO"
+      ]
+    },
+    {
+      "id": "government-actuarys-department",
+      "aliases": [
+        "GAD"
+      ]
+    },
+    {
+      "id": "government-digital-service",
+      "aliases": [
+        "GDS"
+      ]
+    },
+    {
+      "id": "government-equalities-office",
+      "aliases": [
+        "GEO"
+      ]
+    },
+    {
+      "id": "government-internal-audit-agency",
+      "aliases": [
+        "GIAA"
+      ]
+    },
+    {
+      "id": "government-legal-department",
+      "aliases": [
+        "GLD"
+      ]
+    },
+    {
+      "id": "government-property-agency",
+      "aliases": [
+        "GPA"
+      ]
+    },
+    {
+      "id": "health-and-safety-executive",
+      "aliases": [
+        "HSE"
+      ]
+    },
+    {
+      "id": "health-research-authority",
+      "aliases": [
+        "HRA"
+      ]
+    },
+    {
+      "id": "highways-england",
+      "aliases": [
+        "HE",
+        "National Highways",
+        "Nat Highways"
+      ]
+    },
+    {
+      "id": "hm-courts-and-tribunals-service",
+      "aliases": [
+        "HMCTS"
+      ]
+    },
+    {
+      "id": "hm-inspectorate-of-prisons",
+      "aliases": [
+        "HMI Prisons",
+        "HMIP"
+      ]
+    },
+    {
+      "id": "hm-inspectorate-of-probation",
+      "aliases": [
+        "HMI Probation"
+      ]
+    },
+    {
+      "id": "hm-land-registry",
+      "aliases": [
+        "HMLR",
+        "Land Registry",
+        "Land Reg"
+      ]
+    },
+    {
+      "id": "hm-passport-office",
+      "aliases": [
+        "HMPO"
+      ]
+    },
+    {
+      "id": "hm-prison-and-probation-service",
+      "aliases": [
+        "HMPPS"
+      ]
+    },
+    {
+      "id": "hm-revenue-customs",
+      "aliases": [
+        "HMRC",
+        "Revenue & Customs",
+        "Tax"
+      ]
+    },
+    {
+      "id": "hm-treasury",
+      "aliases": [
+        "HMT",
+        "Treasury"
+      ]
+    },
+    {
+      "id": "home-office",
+      "aliases": [
+        "HO"
+      ]
+    },
+    {
+      "id": "homes-england",
+      "aliases": [
+        "HE"
+      ]
+    },
+    {
+      "id": "immigration-advice-authority",
+      "aliases": [
+        "IAA"
+      ]
+    },
+    {
+      "id": "information-commissioner-s-office",
+      "aliases": [
+        "ICO"
+      ]
+    },
+    {
+      "id": "innovate-uk",
+      "aliases": [
+        "IUK"
+      ]
+    },
+    {
+      "id": "intellectual-property-office",
+      "aliases": [
+        "IPO"
+      ]
+    },
+    {
+      "id": "legal-aid-agency",
+      "aliases": [
+        "LAA"
+      ]
+    },
+    {
+      "id": "maritime-and-coastguard-agency",
+      "aliases": [
+        "MCA"
+      ]
+    },
+    {
+      "id": "medicines-and-healthcare-products-regulatory-agency",
+      "aliases": [
+        "MHRA"
+      ]
+    },
+    {
+      "id": "ministry-of-defence",
+      "aliases": [
+        "MOD",
+        "MoD"
+      ]
+    },
+    {
+      "id": "ministry-of-housing-communities-and-local-government",
+      "aliases": [
+        "MHCLG"
+      ]
+    },
+    {
+      "id": "ministry-of-justice",
+      "aliases": [
+        "MOJ",
+        "MoJ"
+      ]
+    },
+    {
+      "id": "national-crime-agency",
+      "aliases": [
+        "NCA"
+      ]
+    },
+    {
+      "id": "national-highways",
+      "aliases": [
+        "NH",
+        "Highways England"
+      ]
+    },
+    {
+      "id": "nhs-england",
+      "aliases": [
+        "NHSE",
+        "NHS"
+      ]
+    },
+    {
+      "id": "northern-ireland-office",
+      "aliases": [
+        "NIO"
+      ]
+    },
+    {
+      "id": "nuclear-decommissioning-authority",
+      "aliases": [
+        "NDA"
+      ]
+    },
+    {
+      "id": "ofcom",
+      "aliases": [
+        "Ofcom",
+        "OFCOM"
+      ]
+    },
+    {
+      "id": "office-for-budget-responsibility",
+      "aliases": [
+        "OBR"
+      ]
+    },
+    {
+      "id": "office-for-national-statistics",
+      "aliases": [
+        "ONS"
+      ]
+    },
+    {
+      "id": "office-for-veterans-affairs",
+      "aliases": [
+        "OVA"
+      ]
+    },
+    {
+      "id": "office-for-zero-emission-vehicles",
+      "aliases": [
+        "OZEV"
+      ]
+    },
+    {
+      "id": "office-of-rail-and-road",
+      "aliases": [
+        "ORR"
+      ]
+    },
+    {
+      "id": "office-of-the-advocate-general-for-scotland",
+      "aliases": [
+        "OAG"
+      ]
+    },
+    {
+      "id": "office-of-the-secretary-of-state-for-scotland",
+      "aliases": [
+        "SO",
+        "Scotland Office"
+      ]
+    },
+    {
+      "id": "office-of-the-secretary-of-state-for-wales",
+      "aliases": [
+        "WO",
+        "Wales Office"
+      ]
+    },
+    {
+      "id": "ofgem",
+      "aliases": [
+        "Ofgem",
+        "OFGEM"
+      ]
+    },
+    {
+      "id": "ofqual",
+      "aliases": [
+        "Ofqual",
+        "OFQUAL"
+      ]
+    },
+    {
+      "id": "ofsted",
+      "aliases": [
+        "Ofsted",
+        "OFSTED"
+      ]
+    },
+    {
+      "id": "planning-inspectorate",
+      "aliases": [
+        "PINS"
+      ]
+    },
+    {
+      "id": "public-health-england",
+      "aliases": [
+        "PHE"
+      ]
+    },
+    {
+      "id": "royal-mint",
+      "aliases": [
+        "Royal Mint",
+        "RM"
+      ]
+    },
+    {
+      "id": "serious-fraud-office",
+      "aliases": [
+        "SFO"
+      ]
+    },
+    {
+      "id": "social-mobility-commission",
+      "aliases": [
+        "SMC"
+      ]
+    },
+    {
+      "id": "student-loans-company",
+      "aliases": [
+        "SLC"
+      ]
+    },
+    {
+      "id": "supreme-court-of-the-united-kingdom",
+      "aliases": [
+        "UKSC",
+        "Supreme Court"
+      ]
+    },
+    {
+      "id": "teaching-regulation-agency",
+      "aliases": [
+        "TRA"
+      ]
+    },
+    {
+      "id": "the-coal-authority",
+      "aliases": [
+        "CA"
+      ]
+    },
+    {
+      "id": "the-insolvency-service",
+      "aliases": [
+        "Insolvency Service",
+        "IS",
+        "The Insolvency Service"
+      ]
+    },
+    {
+      "id": "the-national-archives",
+      "aliases": [
+        "TNA"
+      ]
+    },
+    {
+      "id": "the-water-services-regulation-authority",
+      "aliases": [
+        "Ofwat",
+        "OFWAT"
+      ]
+    },
+    {
+      "id": "uk-atomic-energy-authority",
+      "aliases": [
+        "UKAEA"
+      ]
+    },
+    {
+      "id": "uk-debt-management-office",
+      "aliases": [
+        "DMO",
+        "UKDMO"
+      ]
+    },
+    {
+      "id": "uk-export-finance",
+      "aliases": [
+        "UKEF"
+      ]
+    },
+    {
+      "id": "uk-health-security-agency",
+      "aliases": [
+        "UKHSA"
+      ]
+    },
+    {
+      "id": "uk-hydrographic-office",
+      "aliases": [
+        "UKHO"
+      ]
+    },
+    {
+      "id": "uk-space-agency",
+      "aliases": [
+        "UKSA"
+      ]
+    },
+    {
+      "id": "uk-statistics-authority",
+      "aliases": [
+        "UKSA"
+      ]
+    },
+    {
+      "id": "uk-trade-and-investment",
+      "aliases": [
+        "UKTI"
+      ]
+    },
+    {
+      "id": "uk-visas-and-immigration",
+      "aliases": [
+        "UKVI"
+      ]
+    },
+    {
+      "id": "valuation-office-agency",
+      "aliases": [
+        "VOA"
+      ]
+    },
+    {
+      "id": "vehicle-certification-agency",
+      "aliases": [
+        "VCA"
+      ]
+    },
+    {
+      "id": "veterinary-medicines-directorate",
+      "aliases": [
+        "VMD"
+      ]
+    },
+    {
+      "id": "youth-justice-board-for-england-and-wales",
+      "aliases": [
+        "YJB"
+      ]
+    }
+  ]
+}

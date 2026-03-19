@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "description": "Cross\u2011government verification authority layer showing which organisations act as authoritative sources of key credentials.",
+    "layer": "verification_authorities"
+  },
+  "nodes": [
+    {
+      "id": "verify_income",
+      "name": "Verify Income",
+      "type": "verification"
+    },
+    {
+      "id": "verify_identity",
+      "name": "Verify Identity",
+      "type": "verification"
+    },
+    {
+      "id": "verify_company",
+      "name": "Verify Company",
+      "type": "verification"
+    },
+    {
+      "id": "verify_property",
+      "name": "Verify Property Ownership",
+      "type": "verification"
+    },
+    {
+      "id": "verify_vehicle",
+      "name": "Verify Vehicle / Driving Status",
+      "type": "verification"
+    },
+    {
+      "id": "verify_health",
+      "name": "Verify Health Condition",
+      "type": "verification"
+    }
+  ],
+  "edges": [
+    {
+      "source": "verify_income",
+      "target": "hm-revenue-customs",
+      "type": "verification_authority",
+      "reason": "PAYE, tax and earnings records",
+      "weight": 10
+    },
+    {
+      "source": "verify_identity",
+      "target": "home-office",
+      "type": "verification_authority",
+      "reason": "passport and immigration identity records",
+      "weight": 10
+    },
+    {
+      "source": "verify_company",
+      "target": "companies-house",
+      "type": "verification_authority",
+      "reason": "company registration and officer records",
+      "weight": 10
+    },
+    {
+      "source": "verify_property",
+      "target": "hm-land-registry",
+      "type": "verification_authority",
+      "reason": "land title and ownership data",
+      "weight": 10
+    },
+    {
+      "source": "verify_vehicle",
+      "target": "driver-vehicle-licensing-agency",
+      "type": "verification_authority",
+      "reason": "driver and vehicle register",
+      "weight": 10
+    },
+    {
+      "source": "verify_health",
+      "target": "nhs-england",
+      "type": "verification_authority",
+      "reason": "health system records and clinical evidence",
+      "weight": 10
+    }
+  ]
+}
