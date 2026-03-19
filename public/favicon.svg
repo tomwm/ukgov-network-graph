@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Simple network graph icon -->
+  <rect width="32" height="32" rx="4" fill="#1d4ed8"/>
+  <!-- Nodes -->
+  <circle cx="16" cy="8" r="3" fill="white"/>
+  <circle cx="7" cy="22" r="3" fill="white"/>
+  <circle cx="25" cy="22" r="3" fill="white"/>
+  <!-- Edges -->
+  <line x1="16" y1="11" x2="8.5" y2="19.5" stroke="white" stroke-width="1.5" stroke-opacity="0.8"/>
+  <line x1="16" y1="11" x2="23.5" y2="19.5" stroke="white" stroke-width="1.5" stroke-opacity="0.8"/>
+  <line x1="10" y1="22" x2="22" y2="22" stroke="white" stroke-width="1.5" stroke-opacity="0.8"/>
+</svg>
