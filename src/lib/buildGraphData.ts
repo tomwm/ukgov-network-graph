@@ -119,13 +119,16 @@ export function buildGraphData(): GraphData {
     const sourceExists = usedIds.has(edge.source);
     const targetExists = usedIds.has(edge.target);
     if (sourceExists && targetExists) {
-      const dependencies = edge.dependencies || [];
+      const dependencies = (edge.dependencies || []).filter(
+        (d: any) => d.dependency_type !== "governance"
+      );
+      if (dependencies.length === 0) continue;
       edges.push({
         source: edge.source,
         target: edge.target,
         type: "depends_on",
         dependencies,
-        primary_dependency_type: dependencies.length > 0 ? getPrimaryDependencyType(dependencies) : undefined,
+        primary_dependency_type: getPrimaryDependencyType(dependencies),
         total_weight: edge.total_weight,
       });
     }

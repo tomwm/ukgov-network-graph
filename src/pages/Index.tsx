@@ -10,7 +10,6 @@ import type { GraphNode, GraphEdge, DependencyType } from "@/types/graph";
 import type { Journey } from "@/types/journey";
 
 const DEFAULT_DEP_FILTERS: Record<DependencyType, boolean> = {
-  governance: false,
   shared_service: true,
   data_sharing: true,
   platform: true,

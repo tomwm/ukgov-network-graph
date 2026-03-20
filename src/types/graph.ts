@@ -1,5 +1,4 @@
 export type DependencyType =
-  | "governance"
   | "shared_service"
   | "data_sharing"
   | "platform"
@@ -56,7 +55,6 @@ export interface GraphData {
 }
 
 export const DEPENDENCY_TYPES: { type: DependencyType; label: string; color: string }[] = [
-  { type: "governance", label: "Governance", color: "#94a3b8" },
   { type: "shared_service", label: "Shared service", color: "#22c55e" },
   { type: "data_sharing", label: "Data sharing", color: "#f97316" },
   { type: "platform", label: "Platform", color: "#3b82f6" },
