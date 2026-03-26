@@ -2,7 +2,8 @@ import orgAndServices from "@/data/uk_gov_organisations_and_services.json";
 import depData from "@/data/uk_gov_org_dependency.json";
 import staffData from "@/data/uk_gov_org_staff_numbers.json";
 import aliasData from "@/data/uk_gov_org_aliases.json";
-import type { GraphNode, GraphEdge, GraphData, DependencyType } from "@/types/graph";
+import policyOverlapData from "@/data/uk_gov_policy_overlap.json";
+import type { GraphNode, GraphEdge, GraphData, DependencyType, PolicyOverlapEdge } from "@/types/graph";
 
 function slugify(name: string): string {
   return name
@@ -145,5 +146,23 @@ export function buildGraphData(): GraphData {
     }
   }
 
-  return { nodes, edges, aliasMap };
+  // 3. Policy overlap edges (overlay only — not part of force simulation)
+  const pol = policyOverlapData as any;
+  const policyOverlapEdges: PolicyOverlapEdge[] = (pol.overlap_edges || [])
+    .filter((e: any) => usedIds.has(e.source) && usedIds.has(e.target))
+    .map((e: any) => ({
+      source: e.source,
+      target: e.target,
+      topics: e.topics,
+      total_score: e.total_score,
+      topic_count: e.topic_count,
+    }));
+
+  const policyTopicIndex: Record<string, { slug: string; count: number }[]> = {};
+  for (const [topic, orgs] of Object.entries(pol.topic_index || {})) {
+    const filtered = (orgs as any[]).filter((o) => usedIds.has(o.slug));
+    if (filtered.length > 0) policyTopicIndex[topic] = filtered;
+  }
+
+  return { nodes, edges, aliasMap, policyOverlapEdges, policyTopicIndex };
 }

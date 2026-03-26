@@ -47,11 +47,22 @@ export interface GraphEdge {
   weight?: number;
 }
 
+export interface PolicyOverlapEdge {
+  source: string;
+  target: string;
+  topics: { topic: string; count_a: number; count_b: number; score: number }[];
+  total_score: number;
+  topic_count: number;
+}
+
 export interface GraphData {
   nodes: GraphNode[];
   edges: GraphEdge[];
   /** Maps lowercase alias → node id for search */
   aliasMap: Map<string, string>;
+  policyOverlapEdges: PolicyOverlapEdge[];
+  /** topic label → orgs active in that topic, sorted by publication count */
+  policyTopicIndex: Record<string, { slug: string; count: number }[]>;
 }
 
 export const DEPENDENCY_TYPES: { type: DependencyType; label: string; color: string }[] = [

@@ -33,6 +33,11 @@ interface GraphControlsProps {
   selectedJourneyId: string | null;
   onSelectedJourneyChange: (id: string | null) => void;
   activeJourney: Journey | null;
+  showPolicyOverlap: boolean;
+  onShowPolicyOverlapChange: (value: boolean) => void;
+  policyTopics: string[];
+  activePolicyTopic: string | null;
+  onPolicyTopicChange: (topic: string | null) => void;
 }
 
 export default function GraphControls({
@@ -58,6 +63,11 @@ export default function GraphControls({
   selectedJourneyId,
   onSelectedJourneyChange,
   activeJourney,
+  showPolicyOverlap,
+  onShowPolicyOverlapChange,
+  policyTopics,
+  activePolicyTopic,
+  onPolicyTopicChange,
 }: GraphControlsProps) {
   const [layoutOpen, setLayoutOpen] = useState(true);
 
@@ -184,6 +194,36 @@ export default function GraphControls({
         </div>
       </div>
 
+      {/* Policy Topics */}
+      <div>
+        <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+          Policy Topics
+        </div>
+        <div className="flex flex-col gap-2">
+          <label className="flex items-center gap-2 cursor-pointer text-sm text-foreground">
+            <input
+              type="checkbox"
+              checked={showPolicyOverlap}
+              onChange={(e) => onShowPolicyOverlapChange(e.target.checked)}
+              className="rounded border-input"
+              style={{ accentColor: "hsl(38, 90%, 55%)" }}
+            />
+            Show policy overlap
+          </label>
+          <select
+            disabled={!showPolicyOverlap}
+            value={activePolicyTopic || ""}
+            onChange={(e) => onPolicyTopicChange(e.target.value || null)}
+            className="w-full py-1.5 px-2 text-sm bg-background border border-input rounded disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-ring"
+          >
+            <option value="">All topics</option>
+            {policyTopics.map((t) => (
+              <option key={t} value={t}>{t}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
       {/* Citizen Journeys */}
       <JourneyControls
         journeys={journeys}
@@ -274,6 +314,12 @@ export default function GraphControls({
               {label}
             </div>
           ))}
+          {showPolicyOverlap && (
+            <div className="flex items-center gap-2">
+              <span className="w-6 border-t-2" style={{ borderColor: "hsl(38, 90%, 55%)", borderStyle: "dashed" }} />
+              Policy overlap
+            </div>
+          )}
           {activeJourney && (
             <div className="flex items-center gap-2 mt-1">
               <svg width="24" height="12" className="flex-shrink-0">

@@ -40,6 +40,18 @@ const Index = () => {
   const [journeyEnabled, setJourneyEnabled] = useState(false);
   const [selectedJourneyId, setSelectedJourneyId] = useState<string | null>(null);
 
+  // Policy overlap state
+  const [showPolicyOverlap, setShowPolicyOverlap] = useState(false);
+  const [activePolicyTopic, setActivePolicyTopic] = useState<string | null>(null);
+
+  const policyTopics = useMemo(() => Object.keys(data.policyTopicIndex).sort(), [data.policyTopicIndex]);
+
+  const policyTopicOrgIds = useMemo(() => {
+    if (!activePolicyTopic) return null;
+    const orgs = data.policyTopicIndex[activePolicyTopic] || [];
+    return new Set(orgs.map((o) => o.slug));
+  }, [activePolicyTopic, data.policyTopicIndex]);
+
   const activeJourney: Journey | null = useMemo(() => {
     if (!journeyEnabled || !selectedJourneyId) return null;
     return journeys.find((j) => j.id === selectedJourneyId) || null;
@@ -158,6 +170,11 @@ const Index = () => {
             selectedJourneyId={selectedJourneyId}
             onSelectedJourneyChange={setSelectedJourneyId}
             activeJourney={activeJourney}
+            showPolicyOverlap={showPolicyOverlap}
+            onShowPolicyOverlapChange={setShowPolicyOverlap}
+            policyTopics={policyTopics}
+            activePolicyTopic={activePolicyTopic}
+            onPolicyTopicChange={setActivePolicyTopic}
           />
         </aside>
 
@@ -179,6 +196,10 @@ const Index = () => {
             spacing={spacing}
             edgeLength={edgeLength}
             activeJourney={activeJourney}
+            policyOverlapEdges={data.policyOverlapEdges}
+            showPolicyOverlap={showPolicyOverlap}
+            activePolicyTopic={activePolicyTopic}
+            policyTopicOrgIds={policyTopicOrgIds}
           />
         </main>
 
