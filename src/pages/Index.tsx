@@ -6,7 +6,7 @@ import NodeInfoPanel from "@/components/NodeInfoPanel";
 import JourneyDetailPanel from "@/components/JourneyDetailPanel";
 import { buildGraphData } from "@/lib/buildGraphData";
 import { loadJourneys } from "@/lib/loadJourneys";
-import type { GraphNode, GraphEdge, DependencyType } from "@/types/graph";
+import type { GraphNode, GraphEdge, DependencyType, PolicyOverlapEdge } from "@/types/graph";
 import type { Journey } from "@/types/journey";
 
 const DEFAULT_DEP_FILTERS: Record<DependencyType, boolean> = {
@@ -32,6 +32,7 @@ const Index = () => {
   const [showOrganisations, setShowOrganisations] = useState(true);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [selectedEdge, setSelectedEdge] = useState<GraphEdge | null>(null);
+  const [selectedPolicyEdge, setSelectedPolicyEdge] = useState<PolicyOverlapEdge | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
   const [spacing, setSpacing] = useState(40);
   const [edgeLength, setEdgeLength] = useState(20);
@@ -96,18 +97,28 @@ const Index = () => {
   const handleNodeSelect = useCallback((node: GraphNode | null) => {
     setSelectedNode(node);
     setSelectedEdge(null);
+    setSelectedPolicyEdge(null);
     if (node) setPanelOpen(true);
   }, []);
 
   const handleEdgeSelect = useCallback((edge: GraphEdge | null) => {
     setSelectedEdge(edge);
     setSelectedNode(null);
+    setSelectedPolicyEdge(null);
     if (edge) setPanelOpen(true);
+  }, []);
+
+  const handlePolicyEdgeSelect = useCallback((edge: PolicyOverlapEdge) => {
+    setSelectedPolicyEdge(edge);
+    setSelectedNode(null);
+    setSelectedEdge(null);
+    setPanelOpen(true);
   }, []);
 
   const handleBackgroundClick = useCallback(() => {
     setSelectedNode(null);
     setSelectedEdge(null);
+    setSelectedPolicyEdge(null);
   }, []);
 
   const handleResetLayout = useCallback(() => {
@@ -200,6 +211,7 @@ const Index = () => {
             showPolicyOverlap={showPolicyOverlap}
             activePolicyTopic={activePolicyTopic}
             policyTopicOrgIds={policyTopicOrgIds}
+            onPolicyEdgeSelect={handlePolicyEdgeSelect}
           />
         </main>
 
@@ -215,10 +227,11 @@ const Index = () => {
           <NodeInfoPanel
             node={selectedNode}
             selectedEdge={selectedEdge}
+            selectedPolicyEdge={selectedPolicyEdge}
             edges={data.edges}
             nodes={data.nodes}
             isOpen={panelOpen}
-            onClose={() => { setPanelOpen(false); setSelectedEdge(null); }}
+            onClose={() => { setPanelOpen(false); setSelectedEdge(null); setSelectedPolicyEdge(null); }}
             onToggle={() => setPanelOpen(true)}
           />
         )}

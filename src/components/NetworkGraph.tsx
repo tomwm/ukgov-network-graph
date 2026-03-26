@@ -24,6 +24,7 @@ interface NetworkGraphProps {
   showPolicyOverlap: boolean;
   activePolicyTopic: string | null;
   policyTopicOrgIds: Set<string> | null;
+  onPolicyEdgeSelect: (edge: PolicyOverlapEdge) => void;
 }
 
 export interface NetworkGraphHandle {
@@ -104,6 +105,7 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
   showPolicyOverlap,
   activePolicyTopic,
   policyTopicOrgIds,
+  onPolicyEdgeSelect,
 }, ref) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const simulationRef = useRef<d3.Simulation<GraphNode, GraphEdge> | null>(null);
@@ -643,6 +645,13 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
             .attr("x2", toNode.x ?? 0)
             .attr("y2", toNode.y ?? 0);
         }
+      })
+      .on("click", function (event: MouseEvent, d) {
+        event.stopPropagation();
+        onPolicyEdgeSelect(d);
+        onNodeSelect(null);
+        onEdgeSelect(null);
+        setTooltip(null);
       })
       .on("mouseenter", function (event: MouseEvent, d) {
         const rect = svgRef.current!.getBoundingClientRect();
