@@ -649,8 +649,6 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
       .on("click", function (event: MouseEvent, d) {
         event.stopPropagation();
         onPolicyEdgeSelect(d);
-        onNodeSelect(null);
-        onEdgeSelect(null);
         setTooltip(null);
       })
       .on("mouseenter", function (event: MouseEvent, d) {
