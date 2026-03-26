@@ -43,7 +43,10 @@ const NODE_COLORS: Record<string, string> = {
 const JOURNEY_COLOR = "#06b6d4";
 
 function getNodeColor(node: GraphNode): string {
-  if (node.type === "service") return NODE_COLORS.service;
+  if (node.type === "service") {
+    if (node.phase === "Retired") return "hsl(220, 10%, 50%)";
+    return NODE_COLORS.service;
+  }
   return NODE_COLORS[node.org_type || "department"] || NODE_COLORS.department;
 }
 
@@ -358,6 +361,8 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
       .attr("fill", (d) => getNodeColor(d))
       .attr("stroke", "hsl(0,0%,100%)")
       .attr("stroke-width", 1.5)
+      .attr("stroke-dasharray", (d) => d.phase === "Retired" ? "3,2" : null)
+      .attr("opacity", (d) => d.phase === "Retired" ? 0.5 : 1)
       .style("cursor", "pointer")
       .call(
         d3
@@ -389,8 +394,11 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
           content: (
             <div>
               <div className="font-semibold text-foreground">{d.name}</div>
-              <div className="text-xs text-muted-foreground capitalize">
+              <div className="text-xs text-muted-foreground capitalize flex items-center gap-1.5">
                 {d.type === "service" ? "Service" : (d.org_type || d.type).replace(/_/g, " ")}
+                {d.phase === "Retired" && (
+                  <span className="text-xs bg-muted text-muted-foreground px-1 py-0.5 rounded font-semibold uppercase tracking-wide">Retired</span>
+                )}
               </div>
               {d.staff_count && (
                 <div className="text-xs text-muted-foreground">{d.staff_count.toLocaleString()} staff</div>
