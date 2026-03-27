@@ -30,6 +30,7 @@ const Index = () => {
   const [depFilters, setDepFilters] = useState<Record<DependencyType, boolean>>(DEFAULT_DEP_FILTERS);
   const [showServices, setShowServices] = useState(true);
   const [showOrganisations, setShowOrganisations] = useState(true);
+  const [showAllLabels, setShowAllLabels] = useState(false);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [selectedEdge, setSelectedEdge] = useState<GraphEdge | null>(null);
   const [selectedPolicyEdge, setSelectedPolicyEdge] = useState<PolicyOverlapEdge | null>(null);
@@ -170,6 +171,8 @@ const Index = () => {
             onShowServicesChange={setShowServices}
             showOrganisations={showOrganisations}
             onShowOrganisationsChange={setShowOrganisations}
+            showAllLabels={showAllLabels}
+            onShowAllLabelsChange={setShowAllLabels}
             spacing={spacing}
             onSpacingChange={setSpacing}
             edgeLength={edgeLength}
@@ -198,6 +201,7 @@ const Index = () => {
             depFilters={depFilters}
             showServices={showServices}
             showOrganisations={showOrganisations}
+            showAllLabels={showAllLabels}
             searchTerm={searchTerm}
             aliasMap={data.aliasMap}
             onNodeSelect={handleNodeSelect}

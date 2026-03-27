@@ -25,6 +25,7 @@ interface NetworkGraphProps {
   activePolicyTopic: string | null;
   policyTopicOrgIds: Set<string> | null;
   onPolicyEdgeSelect: (edge: PolicyOverlapEdge) => void;
+  showAllLabels: boolean;
 }
 
 export interface NetworkGraphHandle {
@@ -106,6 +107,7 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
   activePolicyTopic,
   policyTopicOrgIds,
   onPolicyEdgeSelect,
+  showAllLabels,
 }, ref) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const simulationRef = useRef<d3.Simulation<GraphNode, GraphEdge> | null>(null);
@@ -442,6 +444,7 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
     // Labels for departments
     const labels = g
       .append("g")
+      .attr("class", "labels-dept")
       .selectAll("text")
       .data(simNodes.filter((n) => n.type === "organisation" && n.org_type === "department"))
       .join("text")
@@ -453,6 +456,23 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
       .attr("pointer-events", "none")
       .style("font-family", "'Source Sans 3', sans-serif")
       .style("font-weight", "600");
+
+    // Labels for all other nodes (agencies, services, etc.) — hidden until showAllLabels is on
+    const labelsOther = g
+      .append("g")
+      .attr("class", "labels-other")
+      .selectAll("text")
+      .data(simNodes.filter((n) => !(n.type === "organisation" && n.org_type === "department")))
+      .join("text")
+      .text((d) => d.name.length > 14 ? d.name.substring(0, 12) + "…" : d.name)
+      .attr("font-size", 7)
+      .attr("text-anchor", "middle")
+      .attr("dy", (d) => getNodeRadius(d) + 10)
+      .attr("fill", "hsl(210, 24%, 16%)")
+      .attr("pointer-events", "none")
+      .attr("display", "none")
+      .style("font-family", "'Source Sans 3', sans-serif")
+      .style("font-weight", "500");
 
     // ---- Policy overlap overlay layer ----
     g.append("g").attr("class", "policy-overlap-edges");
@@ -470,6 +490,7 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
 
       circles.attr("cx", (d) => d.x!).attr("cy", (d) => d.y!);
       labels.attr("x", (d) => d.x!).attr("y", (d) => d.y!);
+      labelsOther.attr("x", (d) => d.x!).attr("y", (d) => d.y!);
 
       // Update policy overlap edge positions
       g.select(".policy-overlap-edges").selectAll("line").each(function (d: any) {
@@ -612,6 +633,13 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
       .attr("pointer-events", "none");
 
   }, [activeJourney]);
+
+  // Toggle non-department labels
+  useEffect(() => {
+    if (!svgRef.current) return;
+    d3.select(svgRef.current).select(".labels-other").selectAll("text")
+      .attr("display", showAllLabels ? null : "none");
+  }, [showAllLabels]);
 
   // Policy overlap overlay
   useEffect(() => {

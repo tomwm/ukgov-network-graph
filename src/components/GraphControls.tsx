@@ -22,6 +22,8 @@ interface GraphControlsProps {
   onShowServicesChange: (value: boolean) => void;
   showOrganisations: boolean;
   onShowOrganisationsChange: (value: boolean) => void;
+  showAllLabels: boolean;
+  onShowAllLabelsChange: (value: boolean) => void;
   spacing: number;
   onSpacingChange: (value: number) => void;
   edgeLength: number;
@@ -52,6 +54,8 @@ export default function GraphControls({
   onShowServicesChange,
   showOrganisations,
   onShowOrganisationsChange,
+  showAllLabels,
+  onShowAllLabelsChange,
   spacing,
   onSpacingChange,
   edgeLength,
@@ -126,6 +130,15 @@ export default function GraphControls({
               style={{ accentColor: "hsl(164, 60%, 40%)" }}
             />
             Show services
+          </label>
+          <label className="flex items-center gap-2 cursor-pointer text-sm text-foreground">
+            <input
+              type="checkbox"
+              checked={showAllLabels}
+              onChange={(e) => onShowAllLabelsChange(e.target.checked)}
+              className="rounded border-input"
+            />
+            Show all labels
           </label>
         </div>
       </div>
