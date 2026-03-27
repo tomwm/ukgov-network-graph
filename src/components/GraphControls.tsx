@@ -342,18 +342,38 @@ export default function GraphControls({
         </div>
       </div>
 
-      <div className="px-4 py-3 border-t border-border mt-auto">
-        <p className="text-[10px] text-muted-foreground leading-snug">
-          Services data sourced from{" "}
-          <a
-            href="https://govuk-services-list.x-govuk.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-foreground"
-          >
-            GOV.UK Services List
-          </a>
-        </p>
+      <div className="px-4 py-3 border-t border-border -mx-4">
+        <p className="text-[10px] text-muted-foreground leading-snug font-semibold mb-1">Data sources</p>
+        <ul className="text-[10px] text-muted-foreground leading-relaxed space-y-0.5">
+          <li>
+            <a href="https://www.gov.uk/government/organisations" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
+              GOV.UK Organisations
+            </a>
+          </li>
+          <li>
+            <a href="https://govuk-services-list.x-govuk.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
+              GOV.UK Services List
+            </a>
+          </li>
+          <li>
+            <a href="https://www.gov.uk/search/policy-papers-and-consultations" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
+              GOV.UK Publications
+            </a>
+            {" "}(policy overlap)
+          </li>
+          <li>
+            <a href="https://www.gov.uk/government/collections/civil-service-statistics" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
+              Civil Service Statistics
+            </a>
+            {" "}(staff numbers)
+          </li>
+          <li>
+            <a href="https://www.gov.uk/browse" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
+              GOV.UK Step-by-step guides
+            </a>
+            {" "}(citizen journeys)
+          </li>
+        </ul>
       </div>
     </div>
   );
