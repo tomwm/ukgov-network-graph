@@ -231,7 +231,7 @@ const Index = () => {
             edges={data.edges}
             nodes={data.nodes}
             isOpen={panelOpen}
-            onClose={() => { setPanelOpen(false); setSelectedEdge(null); setSelectedPolicyEdge(null); }}
+            onClose={() => { setPanelOpen(false); setSelectedNode(null); setSelectedEdge(null); setSelectedPolicyEdge(null); }}
             onToggle={() => setPanelOpen(true)}
           />
         )}
