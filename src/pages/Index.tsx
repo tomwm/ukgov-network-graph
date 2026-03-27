@@ -228,6 +228,7 @@ const Index = () => {
             node={selectedNode}
             selectedEdge={selectedEdge}
             selectedPolicyEdge={selectedPolicyEdge}
+            policyTaxonMap={data.policyTaxonMap}
             edges={data.edges}
             nodes={data.nodes}
             isOpen={panelOpen}

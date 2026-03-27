@@ -164,5 +164,10 @@ export function buildGraphData(): GraphData {
     if (filtered.length > 0) policyTopicIndex[topic] = filtered;
   }
 
-  return { nodes, edges, aliasMap, policyOverlapEdges, policyTopicIndex };
+  const policyTaxonMap: Record<string, string> = {};
+  for (const taxon of pol.taxons || []) {
+    if (taxon.label && taxon.content_id) policyTaxonMap[taxon.label] = taxon.content_id;
+  }
+
+  return { nodes, edges, aliasMap, policyOverlapEdges, policyTopicIndex, policyTaxonMap };
 }

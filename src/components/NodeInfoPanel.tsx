@@ -9,6 +9,7 @@ interface NodeInfoPanelProps {
   node: GraphNode | null;
   selectedEdge: GraphEdge | null;
   selectedPolicyEdge: PolicyOverlapEdge | null;
+  policyTaxonMap: Record<string, string>;
   edges: GraphEdge[];
   nodes: GraphNode[];
   isOpen: boolean;
@@ -25,6 +26,7 @@ export default function NodeInfoPanel({
   node,
   selectedEdge,
   selectedPolicyEdge,
+  policyTaxonMap,
   edges,
   nodes,
   isOpen,
@@ -83,7 +85,7 @@ export default function NodeInfoPanel({
 
       <div className="flex-1 overflow-y-auto p-4">
         {selectedPolicyEdge ? (
-          <PolicyOverlapEdgeContent edge={selectedPolicyEdge} nodeMap={nodeMap} />
+          <PolicyOverlapEdgeContent edge={selectedPolicyEdge} nodeMap={nodeMap} policyTaxonMap={policyTaxonMap} />
         ) : selectedEdge ? (
           <EdgeContent edge={selectedEdge} nodeMap={nodeMap} />
         ) : !node ? (
@@ -111,12 +113,24 @@ export default function NodeInfoPanel({
 function PolicyOverlapEdgeContent({
   edge,
   nodeMap,
+  policyTaxonMap,
 }: {
   edge: PolicyOverlapEdge;
   nodeMap: Map<string, GraphNode>;
+  policyTaxonMap: Record<string, string>;
 }) {
   const sourceName = nodeMap.get(edge.source)?.name || edge.source;
   const targetName = nodeMap.get(edge.target)?.name || edge.target;
+
+  function topicSearchUrl(topic: string) {
+    const contentId = policyTaxonMap[topic];
+    const base = "https://www.gov.uk/search/policy-papers-and-consultations";
+    const params = new URLSearchParams();
+    params.append("organisations[]", edge.source);
+    params.append("organisations[]", edge.target);
+    if (contentId) params.append("level_one_taxon", contentId);
+    return `${base}?${params.toString()}`;
+  }
 
   return (
     <div className="flex flex-col gap-4">
@@ -148,9 +162,18 @@ function PolicyOverlapEdgeContent({
                   />
                   <span className="text-sm text-foreground font-medium truncate">{t.topic}</span>
                 </div>
-                <span className="text-xs font-mono text-muted-foreground flex-shrink-0">
-                  score {t.score}
-                </span>
+                <div className="flex items-center gap-2 flex-shrink-0">
+                  <span className="text-xs font-mono text-muted-foreground">score {t.score}</span>
+                  <a
+                    href={topicSearchUrl(t.topic)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary/80"
+                    title="View publications on GOV.UK"
+                  >
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                </div>
               </div>
               <div className="flex gap-4 mt-1.5 pl-4.5 text-xs text-muted-foreground">
                 <span>{sourceName.split(" ").slice(0, 3).join(" ")}: <span className="text-foreground font-medium">{t.count_a.toLocaleString()}</span> pubs</span>
