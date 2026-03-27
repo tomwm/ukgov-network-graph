@@ -40,6 +40,9 @@ interface GraphControlsProps {
   policyTopics: string[];
   activePolicyTopic: string | null;
   onPolicyTopicChange: (topic: string | null) => void;
+  keywordSearch: string;
+  onKeywordSearchChange: (value: string) => void;
+  keywordSearchLoading: boolean;
 }
 
 export default function GraphControls({
@@ -72,6 +75,9 @@ export default function GraphControls({
   policyTopics,
   activePolicyTopic,
   onPolicyTopicChange,
+  keywordSearch,
+  onKeywordSearchChange,
+  keywordSearchLoading,
 }: GraphControlsProps) {
   const [layoutOpen, setLayoutOpen] = useState(true);
 
@@ -223,8 +229,29 @@ export default function GraphControls({
             />
             Show policy overlap
           </label>
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search keyword…"
+              value={keywordSearch}
+              onChange={(e) => onKeywordSearchChange(e.target.value)}
+              disabled={!showPolicyOverlap}
+              className="w-full py-1.5 px-2 pr-6 text-sm bg-background border border-input rounded disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-ring"
+            />
+            {keywordSearchLoading && (
+              <span className="absolute right-2 top-2 text-muted-foreground text-xs animate-pulse">…</span>
+            )}
+            {keywordSearch && !keywordSearchLoading && (
+              <button
+                onClick={() => onKeywordSearchChange("")}
+                className="absolute right-1.5 top-1.5 text-muted-foreground hover:text-foreground"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            )}
+          </div>
           <select
-            disabled={!showPolicyOverlap}
+            disabled={!showPolicyOverlap || !!keywordSearch}
             value={activePolicyTopic || ""}
             onChange={(e) => onPolicyTopicChange(e.target.value || null)}
             className="w-full py-1.5 px-2 text-sm bg-background border border-input rounded disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-ring"

@@ -45,14 +45,78 @@ const Index = () => {
   // Policy overlap state
   const [showPolicyOverlap, setShowPolicyOverlap] = useState(false);
   const [activePolicyTopic, setActivePolicyTopic] = useState<string | null>(null);
+  const [keywordSearch, setKeywordSearch] = useState("");
+  const [keywordSearchLoading, setKeywordSearchLoading] = useState(false);
+  const [liveOverlapEdges, setLiveOverlapEdges] = useState<import("@/types/graph").PolicyOverlapEdge[] | null>(null);
 
   const policyTopics = useMemo(() => Object.keys(data.policyTopicIndex).sort(), [data.policyTopicIndex]);
 
   const policyTopicOrgIds = useMemo(() => {
-    if (!activePolicyTopic) return null;
-    const orgs = data.policyTopicIndex[activePolicyTopic] || [];
-    return new Set(orgs.map((o) => o.slug));
-  }, [activePolicyTopic, data.policyTopicIndex]);
+    if (activePolicyTopic) {
+      const orgs = data.policyTopicIndex[activePolicyTopic] || [];
+      return new Set(orgs.map((o) => o.slug));
+    }
+    if (keywordSearch && liveOverlapEdges) {
+      const ids = new Set<string>();
+      for (const e of liveOverlapEdges) { ids.add(e.source); ids.add(e.target); }
+      return ids;
+    }
+    return null;
+  }, [activePolicyTopic, data.policyTopicIndex, keywordSearch, liveOverlapEdges]);
+
+  // Debounced live keyword search
+  useEffect(() => {
+    if (!keywordSearch.trim()) {
+      setLiveOverlapEdges(null);
+      setKeywordSearchLoading(false);
+      return;
+    }
+    setKeywordSearchLoading(true);
+    const timer = setTimeout(async () => {
+      try {
+        const graphOrgIds = new Set(data.nodes.filter((n) => n.type === "organisation").map((n) => n.id));
+        const url = new URL("https://www.gov.uk/api/search.json");
+        url.searchParams.set("q", keywordSearch.trim());
+        url.searchParams.set("aggregate_organisations", "500");
+        url.searchParams.set("count", "0");
+        ["policy_paper", "research_and_analysis", "consultation", "impact_assessment", "official_statistics"].forEach(
+          (t) => url.searchParams.append("filter_content_store_document_type[]", t)
+        );
+        const res = await fetch(url.toString());
+        const json = await res.json();
+        const orgCounts: Record<string, number> = {};
+        for (const opt of json.aggregates?.organisations?.options || []) {
+          const slug = opt.value.link.replace("/government/organisations/", "");
+          if (graphOrgIds.has(slug) && opt.documents >= 3) {
+            orgCounts[slug] = opt.documents;
+          }
+        }
+        const orgs = Object.entries(orgCounts);
+        const edges: import("@/types/graph").PolicyOverlapEdge[] = [];
+        for (let i = 0; i < orgs.length; i++) {
+          for (let j = i + 1; j < orgs.length; j++) {
+            const score = Math.sqrt(orgs[i][1] * orgs[j][1]);
+            if (score >= 5) {
+              edges.push({
+                source: orgs[i][0],
+                target: orgs[j][0],
+                topics: [{ topic: keywordSearch.trim(), count_a: orgs[i][1], count_b: orgs[j][1], score: Math.round(score) }],
+                total_score: score,
+                topic_count: 1,
+              });
+            }
+          }
+        }
+        edges.sort((a, b) => b.total_score - a.total_score);
+        setLiveOverlapEdges(edges.slice(0, 500));
+      } catch {
+        setLiveOverlapEdges(null);
+      } finally {
+        setKeywordSearchLoading(false);
+      }
+    }, 600);
+    return () => clearTimeout(timer);
+  }, [keywordSearch, data.nodes]);
 
   const activeJourney: Journey | null = useMemo(() => {
     if (!journeyEnabled || !selectedJourneyId) return null;
@@ -188,7 +252,10 @@ const Index = () => {
             onShowPolicyOverlapChange={setShowPolicyOverlap}
             policyTopics={policyTopics}
             activePolicyTopic={activePolicyTopic}
-            onPolicyTopicChange={setActivePolicyTopic}
+            onPolicyTopicChange={(t) => { setActivePolicyTopic(t); setKeywordSearch(""); }}
+            keywordSearch={keywordSearch}
+            onKeywordSearchChange={(v) => { setKeywordSearch(v); setActivePolicyTopic(null); }}
+            keywordSearchLoading={keywordSearchLoading}
           />
         </aside>
 
@@ -211,7 +278,7 @@ const Index = () => {
             spacing={spacing}
             edgeLength={edgeLength}
             activeJourney={activeJourney}
-            policyOverlapEdges={data.policyOverlapEdges}
+            policyOverlapEdges={keywordSearch && liveOverlapEdges ? liveOverlapEdges : data.policyOverlapEdges}
             showPolicyOverlap={showPolicyOverlap}
             activePolicyTopic={activePolicyTopic}
             policyTopicOrgIds={policyTopicOrgIds}

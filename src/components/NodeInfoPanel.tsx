@@ -129,6 +129,7 @@ function PolicyOverlapEdgeContent({
     params.append("organisations[]", edge.source);
     params.append("organisations[]", edge.target);
     if (contentId) params.append("level_one_taxon", contentId);
+    else params.append("keywords", topic);
     return `${base}?${params.toString()}`;
   }
 
