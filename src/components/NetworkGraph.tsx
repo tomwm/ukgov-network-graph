@@ -275,7 +275,7 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
     const g = svg.append("g");
     gRef.current = g;
 
-    const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.2, 4]).on("zoom", (event) => {
+    const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.03, 4]).on("zoom", (event) => {
       g.attr("transform", event.transform);
     });
     zoomRef.current = zoom;
@@ -308,6 +308,8 @@ const NetworkGraph = forwardRef<NetworkGraphHandle, NetworkGraphProps>(({
       )
       .force("charge", d3.forceManyBody().strength(chargeStrength))
       .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("x", d3.forceX(width / 2).strength(0.04))
+      .force("y", d3.forceY(height / 2).strength(0.04))
       .force("collision", d3.forceCollide<GraphNode>().radius((d) => getNodeRadius(d) + 4));
 
     simulationRef.current = simulation;
