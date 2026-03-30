@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://lab.tomwm.co.uk/uk-gov-network-graph/$1",
+      "permanent": true
+    }
+  ]
+}
